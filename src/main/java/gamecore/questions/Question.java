@@ -1,9 +1,11 @@
+package gamecore.questions;
+
 public class Question{
-    private int numberOfCathegory,
+    private int numberOfCategory,
                 numberOfQuestion;
 
-    public Question(int numberOfCathegory, int numberOfQuestion) {
-        this.numberOfCathegory = numberOfCathegory;
+    public Question(int numberOfCategory, int numberOfQuestion) {
+        this.numberOfCategory = numberOfCategory;
         this.numberOfQuestion = numberOfQuestion;
     }
 
@@ -21,15 +23,15 @@ public class Question{
 
         Question ques2 = (Question)obj;
 
-        return (this.numberOfCathegory == ques2.numberOfCathegory && this.numberOfQuestion == ques2.numberOfQuestion);
+        return (this.numberOfCategory == ques2.numberOfCategory && this.numberOfQuestion == ques2.numberOfQuestion);
     }
 
     public int getNumberOfQueston() {
         return numberOfQuestion;
     }
 
-    public int getNumberOfCathegory() {
-        return numberOfCathegory;
+    public int getNumberOfCategory() {
+        return numberOfCategory;
     }
 
     public static void main(String args[]) {

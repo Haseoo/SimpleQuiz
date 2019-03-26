@@ -1,3 +1,5 @@
+package gamecore.players;
+
 class Node {
     public Player player;
     public Node next;

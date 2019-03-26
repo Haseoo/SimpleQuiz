@@ -1,3 +1,5 @@
+package gamecore.players;
+
 public class Player{
     private String playerName;
     private int score = 0;

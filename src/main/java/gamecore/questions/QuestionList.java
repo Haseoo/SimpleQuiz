@@ -1,3 +1,4 @@
+package gamecore.questions;
 import java.util.Vector;
 
 public class QuestionList {
