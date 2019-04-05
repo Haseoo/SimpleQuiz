@@ -2,14 +2,15 @@
 <categoriesList>
     <category>
         <name>Biology</name>
-        <filePath>bio.txx</filePath>
+        <filePath>bio.xml</filePath>
     </category>
     <category>
         <name>Chemistry</name>
-        <filePath>chem.txt</filePath>
+        <filePath>chem.xml</filePath>
     </category>
     <category>
         <name>Computer Science</name>
+        <filePath>inf.xml</filePath>
     </category>
 
 </categoriesList>
