@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<categoriesList>
+    <category>
+        <name>Biology</name>
+        <filePath>bio.txx</filePath>
+    </category>
+    <category>
+        <name>Chemistry</name>
+        <filePath>chem.txt</filePath>
+    </category>
+    <category>
+        <name>Computer Science</name>
+    </category>
+
+</categoriesList>
