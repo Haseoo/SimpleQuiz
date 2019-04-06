@@ -1,19 +1,15 @@
 package gamecore.questions;
-import java.util.Vector;
+import java.util.Stack;
 
 public class QuestionList {
-    private Vector <Question> list;
+    private Stack <QuestionCord> list;
 
-    public QuestionList(String categoryFilePath) {
-        list = new Vector <Question>();
-    }
-
-    Question getNewQuestion() {
-        return null;
+    public QuestionList() {
+        list = new Stack<>();
     }
 
     void addQuestion(int qno, int cno) {
-        Question newQestion = new Question(cno, qno);
+        QuestionCord newQestion = new QuestionCord(cno, qno);
         int ind = list.indexOf(newQestion);
         System.out.println(ind);
         if (ind == -1) { 
@@ -26,7 +22,7 @@ public class QuestionList {
     }
 
     public static void main(String args[]) {
-        QuestionList ql = new QuestionList("xd");
+        QuestionList ql = new QuestionList();
         ql.addQuestion(1, 2);
         ql.addQuestion(5, 3);
         ql.addQuestion(1, 2);

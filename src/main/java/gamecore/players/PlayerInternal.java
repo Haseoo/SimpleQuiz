@@ -1,12 +1,14 @@
 package gamecore.players;
 
-public class Player{
+public class PlayerInternal {
     private String playerName;
-    private int score = 0;
+    private int score = 0,
+                id;
     private boolean isPlaying = true;
 
-    public Player(String playerName) {
+    public PlayerInternal(String playerName, int id) {
         this.playerName = playerName;
+        this.id = id;
     }
 
     public String getPlayerName() {
@@ -25,9 +27,6 @@ public class Player{
         isPlaying = false;
     }
 
-    public String toString() {
-        return String.format("Name: %s, Score: %d", playerName, score); 
-    }
 
     public void addScore() {
         score++;
@@ -35,5 +34,27 @@ public class Player{
 
     public void addScore(int score) {
         this.score += score;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public class Player {
+        public String getPlayerName() {
+            return playerName;
+        }
+
+        public int getPlayerScore() {
+            return score;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public boolean isPlayerPlaying() {
+            return isPlaying;
+        }
     }
 }

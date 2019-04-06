@@ -89,42 +89,47 @@ public class CategoriesList {
         }
     }
 
-       private static void initCategoriesList(){
-            try {
-                File xmlCList = new File(categoriesListFilePath);
-                Document XMLCtgList = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(xmlCList);
+    private static void initCategoriesList(){
+        try {
+            File xmlCList = new File(categoriesListFilePath);
+            Document XMLCtgList = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(xmlCList);
 
-                XMLCtgList.getDocumentElement().normalize();
+            XMLCtgList.getDocumentElement().normalize();
+            NodeList XMLCategoriesNode = XMLCtgList.getElementsByTagName("category");
 
-                NodeList XMLCategoriesNode = XMLCtgList.getElementsByTagName("category");
+            for (int i = 0; i < XMLCategoriesNode.getLength(); i++) {
+                Node XMLCategoryNode = XMLCategoriesNode.item(i);
+                if (XMLCategoryNode.getNodeType() == Node.ELEMENT_NODE) {
+                    try {
+                        Element XMLCategoryElement = (Element) XMLCategoryNode;
+                        String categoryName = XMLCategoryElement.getElementsByTagName("name").item(0).getTextContent();
+                        String categoryFilePath = "src/main/resources/questions/" + XMLCategoryElement.getElementsByTagName("filePath").item(0).getTextContent();
 
-                for (int i = 0; i < XMLCategoriesNode.getLength(); i++) {
-                    Node XMLCategoryNode = XMLCategoriesNode.item(i);
-                    if (XMLCategoryNode.getNodeType() == Node.ELEMENT_NODE) {
-                        try {
-                            Element XMLCategoryElement = (Element) XMLCategoryNode;
-                            String categoryName = XMLCategoryElement.getElementsByTagName("name").item(0).getTextContent();
-                            String categoryFilePath = "src/main/resources/questions/" + XMLCategoryElement.getElementsByTagName("filePath").item(0).getTextContent();
-
-                            categories.add(new Category(i + 1, categoryName, categoryFilePath));
-                        } catch(NullPointerException e) {
-                            //TODO Invalid format exception
-                            System.out.println("Invalid file format exception!");
-                            return;
-                        }
+                        categories.add(new Category(i, categoryName, categoryFilePath));
+                    } catch(NullPointerException e) {
+                        //TODO Invalid format exception
+                        System.out.println("Invalid file format exception!");
+                        return;
                     }
                 }
-
-            } catch (Exception e) {
-                System.out.println(e);
             }
+
+        } catch (Exception e) {
+            System.out.println(e);
         }
+    }
 
     public static void initList() {
         if (categories == null) {
             categories = new ArrayList<>();
             initCategoriesList();
             fillCategoriesList();
+        }
+    }
+
+    public static void resetNumberUsedQuestions() {
+        for(Category i : categories) {
+            i.setNumberOfQuestions(0);
         }
     }
 
@@ -146,6 +151,24 @@ public class CategoriesList {
         int index = categories.indexOf(new Category(categoryID, "", ""));
 
         return categories.get(index).getFilePath();
+    }
+
+    static public void increaseNumberOfUsedQuestions(int categoryID) {
+        if (categories == null) {
+            //TODO List not initialized exception
+        }
+
+        int index = categories.indexOf(new Category(categoryID, "", ""));
+        int usedQuestions = categories.get(index).getNumberOfUsedQuestions();
+        categories.get(index).setNumberOfQuestions(usedQuestions + 1);
+    }
+
+    static public int getTotalNumberOfQuestions() {
+        int sum = 0;
+        for (Category i : categories) {
+            sum += i.getNumberOfQuestions();
+        }
+        return sum;
     }
 
     public static  void main(String...args) {

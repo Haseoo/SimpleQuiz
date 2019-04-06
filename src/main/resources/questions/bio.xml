@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <category>
-    <question id="1">
+    <question>
         <content>Bio test question 1</content>
         <answer>Odp1</answer>
         <answer>Odp2</answer>
@@ -8,15 +8,17 @@
         <answer>Odp4</answer>
         <correctAnswer>1</correctAnswer>
     </question>
-    <question id="2">
+    <question>
         <content>Bio test question 2</content>
         <answer>Odp1</answer>
         <answer>Odp2</answer>
         <answer>Odp3</answer>
         <answer>Odp4</answer>
+        <answer>Odp5</answer>
+        <answer>Odp6</answer>
         <correctAnswer>1</correctAnswer>
     </question>
-    <question id="3">
+    <question>
         <content>Bio test question 3</content>
         <answer>Odp1</answer>
         <answer>Odp2</answer>

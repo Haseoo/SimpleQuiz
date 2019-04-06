@@ -1,42 +1,73 @@
 package gamecore.questions;
 
-public class Question{
-    private int numberOfCategory,
-                numberOfQuestion;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
-    public Question(int numberOfCategory, int numberOfQuestion) {
-        this.numberOfCategory = numberOfCategory;
-        this.numberOfQuestion = numberOfQuestion;
-    }
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+public class Question {
+    public final String questionContent;
+    public final String[] answers;
+    public final int correctAnswer;
+
+    Question(QuestionCord questionCord) {
+        String contentTMP = null;
+        String[] answersTMP = null;
+        int answerTMP = 0;
+
+        String CategoryFileName = CategoriesList.getCategoryPath(questionCord.getNumberOfCategory());
+        int questionID = questionCord.getNumberOfQueston();
+        try {
+            File CategoryXMLFile = new File(CategoryFileName);
+
+            Document XMLCategory = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(CategoryXMLFile);
+            XMLCategory.normalizeDocument();
+
+            NodeList XMLQuestionsList = XMLCategory.getElementsByTagName("question");
+
+            Node questionNode = XMLQuestionsList.item(questionID);
+
+            if (questionNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element question = (Element)questionNode;
+                Node contentNode = question.getElementsByTagName("content").item(0);
+                contentTMP = contentNode.getTextContent();
+
+                NodeList answersXML  = question.getElementsByTagName("answer");
+
+                answersTMP = new String[answersXML.getLength()];
+
+                for(int i = 0; i < answersXML.getLength(); i++) {
+                    Node answerNode = answersXML.item(i);
+                    answersTMP[i] = answerNode.getTextContent();
+                }
+
+                Node answerNode = question.getElementsByTagName("correctAnswer").item(0);
+                answerTMP = Integer.parseInt(answerNode.getTextContent());
+
+            }
+
+        }catch(Exception e) {
+            //TODO throw an exception about category file
+            System.out.println("Invalid file format exception!");
         }
-        if (obj == null) {
-            return false;
+
+        questionContent = contentTMP;
+        answers = answersTMP;
+        correctAnswer = answerTMP;
+    }
+
+    static public void main(String...args) {
+        CategoriesList.initList();
+
+        QuestionCord qc = new QuestionCord(0,1);
+        Question q = new Question(qc);
+        System.out.printf("Q:%s\n", q.questionContent);
+        for(String a : q.answers) {
+            System.out.println(a);
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-
-        Question ques2 = (Question)obj;
-
-        return (this.numberOfCategory == ques2.numberOfCategory && this.numberOfQuestion == ques2.numberOfQuestion);
-    }
-
-    public int getNumberOfQueston() {
-        return numberOfQuestion;
-    }
-
-    public int getNumberOfCategory() {
-        return numberOfCategory;
-    }
-
-    public static void main(String args[]) {
-        Question q1 = new Question(1,2),
-                 q2 = new Question(1,2);
-        System.out.println(q1.equals(q2));
+        System.out.printf("O:%d\n", q.correctAnswer);
     }
 }
