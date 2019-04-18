@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="236c2539-20ef-4e1b-9a11-cd784ddd64d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/questions/bio.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/questions/chem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/questions/inf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoryImproperFormatted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionGenerationNotPossible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionReadingException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/SimpleQuiz.main.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/CategoriesList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/gamecore/questions/CategoriesList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/gamecore/questions/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/questions/categoriesList.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/questions/categoriesList.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/categoriesList.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/gamecore/questions/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/QuestionCord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/gamecore/questions/QuestionCord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/QuestionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/gamecore/questions/QuestionList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/categoriesList.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/categoriesList.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -86,58 +84,52 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/questions/chem.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="151" column="34" lean-forward="true" selection-start-line="151" selection-start-column="34" selection-end-line="151" selection-end-column="34" />
+            <state relative-caret-position="1126">
+              <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1125#1126#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-                <element signature="e#1246#1247#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#4769#4770#0" expanded="true" />
-                <element signature="e#4810#4811#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#872#873#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#6598#6599#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/questions/bio.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoryImproperFormatted.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="11" column="26" selection-end-line="26" selection-end-column="11" />
+            <state relative-caret-position="85">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="36" />
+              <folding>
+                <element signature="e#109#110#0" expanded="true" />
+                <element signature="e#129#130#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/questions/inf.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,18 +159,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/players/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamecore/players/PlayerList.java" />
         <option value="$PROJECT_DIR$/src/main/resources/questions/questionList.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/questions/categoriesList.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/questions/bio.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/questions/chem.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/questions/inf.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/players/PlayerInternal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/players/PlayerList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionGenerationNotPossible.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionReadingException.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/questions/bio.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoryInproperFormatted.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" />
       </list>
     </option>
@@ -197,6 +194,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,6 +219,39 @@
               <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+              <item name="players" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,16 +266,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554496861624" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555623925957" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -264,13 +295,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CategoriesList">
+  <component name="RunManager" selected="Application.Question">
     <configuration name="CategoriesList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gamecore.questions.CategoriesList" />
       <module name="SimpleQuizJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gamecore.questions.*" />
+          <option name="PATTERN" value="gamecore.questions.QuestionInproperFormatted" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -278,9 +309,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gamecore.players.PlayerList" />
-      <module name="SimpleQuiz.main" />
+    <configuration name="PlayersList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gamecore.players.PlayersList" />
+      <module name="SimpleQuizJava.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gamecore.players.*" />
@@ -291,10 +322,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Question" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gamecore.questions.Question" />
+      <module name="SimpleQuizJava.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gamecore.questions.QuestionInproperFormatted" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gamecore.questions.QuestionList" />
+      <module name="SimpleQuizJava.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gamecore.questions.QuestionInproperFormatted" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question" />
+        <item itemvalue="Application.QuestionList" />
+        <item itemvalue="Application.PlayersList" />
         <item itemvalue="Application.CategoriesList" />
-        <item itemvalue="Application.PlayerList" />
       </list>
     </recent_temporary>
   </component>
@@ -311,12 +370,15 @@
       <workItem from="1553632404094" duration="702000" />
       <workItem from="1553766115719" duration="490000" />
       <workItem from="1554467554683" duration="11022000" />
-      <workItem from="1554493484632" duration="3357000" />
+      <workItem from="1554493484632" duration="4356000" />
+      <workItem from="1554555351780" duration="14340000" />
+      <workItem from="1554987827589" duration="34000" />
+      <workItem from="1555614714317" duration="9342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15571000" />
+    <option name="totallyTimeSpent" value="40286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,7 +393,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.13959731" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.14563759" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -339,13 +401,14 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Build Variants" order="7" sideWeight="0.5021097" side_tool="true" weight="0.25637585" />
+      <window_info anchor="bottom" id="Duplicate detector" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
@@ -365,40 +428,48 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3295302" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.14563759" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Build Variants" order="7" sideWeight="0.5021097" side_tool="true" weight="0.25637585" />
+      <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3295302" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3295302" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/Player.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/PlayerList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/questions/questionList.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/org/w3c/dom/Element.java">
@@ -415,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/javax/xml/parsers/DocumentBuilderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="205" column="6" lean-forward="true" selection-start-line="205" selection-start-column="6" selection-end-line="205" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
@@ -429,10 +493,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/bio.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/inf.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="11" column="26" selection-end-line="26" selection-end-column="11" />
+        <state relative-caret-position="578">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/PlayerInternal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -443,10 +538,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/inf.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/PlayersList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -457,6 +560,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionGenerationNotPossible.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/javax/xml/parsers/DocumentBuilderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="198" column="43" selection-start-line="198" selection-start-column="15" selection-end-line="198" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/org/xml/sax/SAXException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="67" column="25" selection-start-line="67" selection-end-line="236" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/questions/categoriesList.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -464,20 +599,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/org/w3c/dom/Document.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="151" column="34" lean-forward="true" selection-start-line="151" selection-start-column="34" selection-end-line="151" selection-end-column="34" />
+        <state relative-caret-position="251">
+          <caret line="331" column="30" selection-start-line="331" selection-start-column="18" selection-end-line="331" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/bio.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/javax/xml/parsers/DocumentBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="196" column="44" selection-start-line="196" selection-start-column="44" selection-end-line="196" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionReadingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#4769#4770#0" expanded="true" />
-            <element signature="e#4810#4811#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoryImproperFormatted.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1126">
+          <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#6598#6599#0" expanded="true" />
           </folding>
         </state>
       </provider>

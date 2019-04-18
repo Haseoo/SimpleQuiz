@@ -26,7 +26,12 @@ public class QuestionCord {
         return (this.numberOfCategory == ques2.numberOfCategory && this.numberOfQuestion == ques2.numberOfQuestion);
     }
 
-    public int getNumberOfQueston() {
+    @Override
+    public int hashCode() {
+        return 3 * numberOfCategory + 7 * numberOfQuestion;
+    }
+
+    public int getNumberOfQuestion() {
         return numberOfQuestion;
     }
 
@@ -36,7 +41,7 @@ public class QuestionCord {
 
     public static void main(String args[]) {
         QuestionCord q1 = new QuestionCord(1,2),
-                 q2 = new QuestionCord(1,2);
+                     q2 = new QuestionCord(1,2);
         System.out.println(q1.equals(q2));
     }
 }
