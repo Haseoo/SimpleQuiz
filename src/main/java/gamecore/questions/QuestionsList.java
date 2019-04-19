@@ -31,7 +31,7 @@ public class QuestionsList {
         }
     }
 
-    public boolean newQuestion(int categoryNo) throws QuestionGenerationNotPossible {
+    public void newQuestion(int categoryNo) throws QuestionGenerationNotPossible {
         QuestionCord tmp;
         boolean result = false;
         RandomLoop:
@@ -49,15 +49,14 @@ public class QuestionsList {
                                                   CategoriesList.getCategoryName(categoryNo));
             throw new QuestionGenerationNotPossible(exceptionLabel);
         }
-        return result;
     }
 
-    QuestionCord getLastQuestion() {
+    public QuestionCord getLastQuestion() {
         return list.peek();
     }
 
     public static void main(String args[]) {
-        CategoriesList.initList();
+        //CategoriesList.initList();
         QuestionsList ql = new QuestionsList();
 
         try {

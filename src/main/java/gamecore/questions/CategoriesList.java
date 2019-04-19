@@ -74,25 +74,7 @@ public class CategoriesList {
     private CategoriesList() {
     }
 
-    private static void fillCategoriesList() throws CategoryImproperFormatted {
-        for (Category i : categories) {
-            try {
-                File categoryFile = new File(i.getFilePath());
-                Document XMLCategory = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(categoryFile);
-                XMLCategory.normalizeDocument();
-                NodeList XMLQuestionsList = XMLCategory.getElementsByTagName("question");
-                i.setNumberOfQuestions(XMLQuestionsList.getLength());
-                System.out.println(i.getName() + ": " + i.getNumberOfQuestions());
-            } catch (Exception e) {
-                String label = String.format("Category no.%s is improperly formatted.", i.getName());
-                CategoryImproperFormatted exception = new CategoryImproperFormatted(label) ;
-                exception.initCause(e.getCause());
-                throw exception;
-            }
-        }
-    }
-
-    private static void initCategoriesList() throws CategoryImproperFormatted {
+    private static void initCategoriesList() throws CategoriesListImproperFormatted {
         int i = 0;
         try {
             File xmlCList = new File(categoriesListFilePath);
@@ -112,22 +94,41 @@ public class CategoriesList {
                 }
         } catch (Exception e) {
             String label = String.format("Category no.%d is improperly formatted.", i);
-            CategoryImproperFormatted exception = new CategoryImproperFormatted(label);
+            CategoriesListImproperFormatted exception = new CategoriesListImproperFormatted(label);
             exception.initCause(e.getCause());
             throw exception;
         }
     }
 
-    public static void initList(){
-        //TODO throws CategoryImproperFormatted
+    private static void fillCategory(Category i) {
+        try {
+            File categoryFile = new File(i.getFilePath());
+            Document XMLCategory = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(categoryFile);
+            XMLCategory.normalizeDocument();
+            NodeList XMLQuestionsList = XMLCategory.getElementsByTagName("question");
+            i.setNumberOfQuestions(XMLQuestionsList.getLength());
+        } catch (Exception e) {
+            String label = String.format("Category %s is improperly formatted : %s", i.getName(), e.getCause());
+            System.out.println(label);
+            categories.remove(i);
+        }
+    }
+
+    private static void fillCategoriesList() {
+        ArrayList<Category> tmp = (ArrayList<Category>)categories.clone();
+        for (Category i : tmp) {
+            fillCategory(i);
+        }
+    }
+
+    public static void initList() throws CategoriesListImproperFormatted{
         if (categories == null) {
-            try {
-                categories = new ArrayList<>();
-                initCategoriesList();
-                fillCategoriesList();
-            } catch(CategoryImproperFormatted e) {
-                System.out.println(e);
-            }
+            categories = new ArrayList<>();
+            initCategoriesList();
+            fillCategoriesList();
+        }
+        for (Category it : categories) {
+            System.out.println(it.getName() + ": " + it.getNumberOfQuestions());
         }
     }
 
@@ -177,11 +178,11 @@ public class CategoriesList {
         return categories.size();
     }
 
-    static public int getNumberOfQuestions(int categoryNO) {
+    static public int getNumberOfQuestions(int categoryNo) {
         if (categories == null) {
             throw new NullPointerException("An attempt to access categories list before initialization.");
         }
-        return categories.get(categoryNO).getNumberOfQuestions();
+        return categories.get(categoryNo).getNumberOfQuestions();
     }
 
     static public int getTotalNumberOfQuestions() {
@@ -196,6 +197,10 @@ public class CategoriesList {
     }
 
     public static  void main(String...args) {
-        CategoriesList.initList();
+        try {
+            CategoriesList.initList();
+        } catch(Exception e) {
+            System.out.println(e + ":" +  e.getCause());
+        }
     }
 }

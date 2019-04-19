@@ -72,7 +72,7 @@ public class Question {
     }
 
     static public void main(String...args) {
-        CategoriesList.initList();
+        //CategoriesList.initList();
         try {
             QuestionCord qc = new QuestionCord(0, 1);
             Question q = new Question(qc);

@@ -2,21 +2,21 @@ package gamecore;
 
 import gamecore.players.PlayerInternal;
 import gamecore.players.PlayersList;
-import gamecore.questions.CategoriesList;
-import gamecore.questions.Question;
-import gamecore.questions.QuestionsList;
+import gamecore.questions.*;
 
 public abstract class Game {
     protected PlayersList playersList;
     protected QuestionsList questionsList;
     protected boolean gameHasEndedVar;
+    protected int TOTAL_NUMBER_OF_QUESTIONS;
+    protected int questionsCounter;
     public enum GameModes {
         ALL_QUESTIONS_WFO;
     }
 
 
 
-    protected Game(String[]players) {
+    protected Game(String[]players) throws CategoriesListImproperFormatted{
         gameHasEndedVar = false;
         playersList = new PlayersList();
         for (String it : players) {
@@ -24,10 +24,10 @@ public abstract class Game {
         }
         CategoriesList.initList();
         questionsList = new QuestionsList();
+        questionsCounter = 0;
     }
 
-    public static Game getInstance(GameModes gameMode, String[] players) {
-        //TODO throws CategoryImproperFormatted
+    public static Game getInstance(GameModes gameMode, String[] players) throws CategoriesListImproperFormatted{
         Game retVar = null;
         switch (gameMode) {
             case ALL_QUESTIONS_WFO:
@@ -38,11 +38,11 @@ public abstract class Game {
         return retVar;
     }
 
-    PlayerInternal.Player[] getPlayerList() {
+    public PlayerInternal.Player[] getPlayerList() {
         return playersList.getPlayersList();
     }
 
-    public abstract Question getNewQuestion();
+    public abstract Question getNewQuestion() throws QuestionGenerationNotPossible, QuestionReadingException;
 
     public abstract Question getNewQuestion(int categoryNo);
 
