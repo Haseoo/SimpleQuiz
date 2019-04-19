@@ -3,11 +3,11 @@ import java.util.Stack;
 
 import java.util.Random;
 
-public class QuestionList {
+public class QuestionsList {
     private Stack <QuestionCord> list;
     private Random random;
 
-    public QuestionList() {
+    public QuestionsList() {
         list = new Stack<>();
         random = new Random();
     }
@@ -58,7 +58,7 @@ public class QuestionList {
 
     public static void main(String args[]) {
         CategoriesList.initList();
-        QuestionList ql = new QuestionList();
+        QuestionsList ql = new QuestionsList();
 
         try {
             for (int i = 0; i < 9; i++ ) {

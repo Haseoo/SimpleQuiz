@@ -6,7 +6,7 @@ public class PlayersList {
     private ArrayList<PlayerInternal> players;
     private int counter = 0;
 
-    PlayersList() {
+    public PlayersList() {
         players = new ArrayList<>();
     }
 
@@ -24,6 +24,26 @@ public class PlayersList {
             externalPlayersList[i] = players.get(i).new Player();
         }
         return externalPlayersList;
+    }
+
+    public PlayerInternal getPlayer(PlayerInternal.Player player) {
+        //TODO exception when player not found
+        PlayerInternal retVal = null;
+        for (PlayerInternal it : players) {
+            if (it.getId() == player.getId()) {
+                retVal = it;
+            }
+        }
+        return retVal;
+    }
+
+
+    public boolean allPlayerHasLost() {
+        boolean retVal = false;
+        for (PlayerInternal it : players) {
+            retVal = retVal || !(it.isPlayerPlaying());
+        }
+        return retVal;
     }
     
 

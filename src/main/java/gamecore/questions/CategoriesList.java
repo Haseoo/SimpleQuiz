@@ -85,7 +85,9 @@ public class CategoriesList {
                 System.out.println(i.getName() + ": " + i.getNumberOfQuestions());
             } catch (Exception e) {
                 String label = String.format("Category no.%s is improperly formatted.", i.getName());
-                throw new CategoryImproperFormatted(label);
+                CategoryImproperFormatted exception = new CategoryImproperFormatted(label) ;
+                exception.initCause(e.getCause());
+                throw exception;
             }
         }
     }
@@ -110,11 +112,14 @@ public class CategoriesList {
                 }
         } catch (Exception e) {
             String label = String.format("Category no.%d is improperly formatted.", i);
-            throw new CategoryImproperFormatted(label);
+            CategoryImproperFormatted exception = new CategoryImproperFormatted(label);
+            exception.initCause(e.getCause());
+            throw exception;
         }
     }
 
     public static void initList(){
+        //TODO throws CategoryImproperFormatted
         if (categories == null) {
             try {
                 categories = new ArrayList<>();
