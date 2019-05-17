@@ -3,6 +3,8 @@ import java.util.Stack;
 
 import java.util.Random;
 
+//TODO indexof==-1 -> contains
+
 public class QuestionsList {
     private Stack <QuestionCord> list;
     private Random random;
@@ -20,7 +22,7 @@ public class QuestionsList {
             int categoryNo = random.nextInt(CategoriesList.getNumberOfCategories());
             int questionNo = random.nextInt(CategoriesList.getNumberOfQuestions(categoryNo));
             tmp = new QuestionCord(categoryNo, questionNo);
-            if (list.indexOf(tmp) == -1) {
+            if (!list.contains(tmp)) {
                 list.add(tmp);
                 result = true;
                 break RandomLoop;
@@ -38,7 +40,7 @@ public class QuestionsList {
         for (int i = 0; i < CategoriesList.getTotalNumberOfQuestions(); i++){
             int questionNo = random.nextInt(CategoriesList.getNumberOfQuestions(categoryNo));
             tmp = new QuestionCord(categoryNo, questionNo);
-            if (list.indexOf(tmp) == -1) {
+            if (!list.contains(tmp)) {
                 list.add(tmp);
                 result = true;
                 break RandomLoop;
@@ -56,7 +58,11 @@ public class QuestionsList {
     }
 
     public static void main(String args[]) {
-        //CategoriesList.initList();
+        try {
+            CategoriesList.initList();
+        } catch(Exception e) {
+            System.out.println(e);
+        }
         QuestionsList ql = new QuestionsList();
 
         try {

@@ -39,9 +39,9 @@ public class PlayersList {
 
 
     public boolean allPlayerHasLost() {
-        boolean retVal = false;
+        boolean retVal = true;
         for (PlayerInternal it : players) {
-            retVal = retVal || !(it.isPlayerPlaying());
+            retVal = retVal && !(it.isPlayerPlaying());
         }
         return retVal;
     }

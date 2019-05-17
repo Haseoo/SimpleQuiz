@@ -1,14 +1,14 @@
 package gamecore.questions;
 
-import org.w3c.dom.Node;
-import org.w3c.dom.Element;
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 final class Category {
     private int id,
@@ -100,24 +100,26 @@ public class CategoriesList {
         }
     }
 
-    private static void fillCategory(Category i) {
-        try {
-            File categoryFile = new File(i.getFilePath());
-            Document XMLCategory = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(categoryFile);
-            XMLCategory.normalizeDocument();
-            NodeList XMLQuestionsList = XMLCategory.getElementsByTagName("question");
-            i.setNumberOfQuestions(XMLQuestionsList.getLength());
-        } catch (Exception e) {
-            String label = String.format("Category %s is improperly formatted : %s", i.getName(), e.getCause());
-            System.out.println(label);
-            categories.remove(i);
-        }
+
+    private static void fillCategory(Category i) throws Exception {
+        File categoryFile = new File(i.getFilePath());
+        Document XMLCategory = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(categoryFile);
+        XMLCategory.normalizeDocument();
+        NodeList XMLQuestionsList = XMLCategory.getElementsByTagName("question");
+        i.setNumberOfQuestions(XMLQuestionsList.getLength());
     }
 
     private static void fillCategoriesList() {
-        ArrayList<Category> tmp = (ArrayList<Category>)categories.clone();
-        for (Category i : tmp) {
-            fillCategory(i);
+        Iterator<Category> it =  categories.iterator();
+        while(it.hasNext()) {
+            Category current = it.next();
+            try {
+                fillCategory(current);
+            } catch(Exception e) {
+                String label = String.format("Category's file %s is improperly formatted : %s", current.getName(), e.getCause());
+                System.out.println(label);
+                it.remove();
+            }
         }
     }
 
@@ -137,7 +139,7 @@ public class CategoriesList {
             throw new NullPointerException("An attempt to access categories list before initialization.");
         }
         for(Category i : categories) {
-            i.setNumberOfQuestions(0);
+            i.setNumberOfUsedQuestions(0);
         }
     }
 
