@@ -10,68 +10,15 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-final class Category {
-    private int id,
-                numberOfQuestions,
-                numberOfUsedQuestions;
-    private String  name,
-                    filePath;
-    public Category(int id, String name, String filePath) {
-        this.id = id;
-        this.name = name;
-        this.filePath = filePath;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getFilePath() {
-        return filePath;
-    }
-
-    public int getID() {
-        return id;
-    }
-
-    public int getNumberOfQuestions() {
-        return numberOfQuestions;
-    }
-
-    public void setNumberOfQuestions(int numberOfQuestions) {
-        this.numberOfQuestions = numberOfQuestions;
-    }
-
-    public int getNumberOfUsedQuestions() {
-        return numberOfUsedQuestions;
-    }
-
-    public void setNumberOfUsedQuestions(int numberOfUsedQuestions) {
-        this.numberOfUsedQuestions = numberOfUsedQuestions;
-    }
-
-    @Override
-    public boolean equals(Object other) {
-        if(this.getClass() != other.getClass()) {
-            return false;
-        }
-
-        Category otherObject = (Category)other;
-
-        return  (otherObject.id == this.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return 7 * id;
-    }
-}
-
 public class CategoriesList {
-    private static ArrayList<Category> categories = null;
-    public static final String categoriesListFilePath = "src/main/resources/questions/categoriesList.xml";
+    private int[] numberOfUsedQuestions;
 
-    private CategoriesList() {
+    private static ArrayList<Category> categories = null;
+    public static final String categoriesListFilePath = "questions/categoriesList.xml";
+
+    public CategoriesList() throws CategoriesListImproperFormatted {
+        initList();
+        numberOfUsedQuestions = new int[categories.size()];
     }
 
     private static void initCategoriesList() throws CategoriesListImproperFormatted {
@@ -101,6 +48,7 @@ public class CategoriesList {
     }
 
 
+
     private static void fillCategory(Category i) throws Exception {
         File categoryFile = new File(i.getFilePath());
         Document XMLCategory = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(categoryFile);
@@ -123,7 +71,7 @@ public class CategoriesList {
         }
     }
 
-    public static void initList() throws CategoriesListImproperFormatted{
+    private static void initList() throws CategoriesListImproperFormatted{
         if (categories == null) {
             categories = new ArrayList<>();
             initCategoriesList();
@@ -131,15 +79,6 @@ public class CategoriesList {
         }
         for (Category it : categories) {
             System.out.println(it.getName() + ": " + it.getNumberOfQuestions());
-        }
-    }
-
-    public static void resetNumberUsedQuestions() {
-        if (categories == null) {
-            throw new NullPointerException("An attempt to access categories list before initialization.");
-        }
-        for(Category i : categories) {
-            i.setNumberOfUsedQuestions(0);
         }
     }
 
@@ -163,28 +102,27 @@ public class CategoriesList {
         return categories.get(index).getFilePath();
     }
 
-    static public void increaseNumberOfUsedQuestions(int categoryID) {
+    public void increaseNumberOfUsedQuestions(int categoryID) {
         if (categories == null) {
             throw new NullPointerException("An attempt to access categories list before initialization.");
         }
 
         int index = categories.indexOf(new Category(categoryID, "", ""));
-        int usedQuestions = categories.get(index).getNumberOfUsedQuestions();
-        categories.get(index).setNumberOfQuestions(usedQuestions + 1);
+        numberOfUsedQuestions[index]++;
     }
 
-    static public int getNumberOfCategories() {
+    public int getNumberOfCategories() {
         if (categories == null) {
             throw new NullPointerException("An attempt to access categories list before initialization.");
         }
         return categories.size();
     }
 
-    static public int getNumberOfQuestions(int categoryNo) {
+    public int getNumberOfQuestions(int categoryNo) {
         if (categories == null) {
             throw new NullPointerException("An attempt to access categories list before initialization.");
         }
-        return categories.get(categoryNo).getNumberOfQuestions();
+        return numberOfUsedQuestions[categoryNo];
     }
 
     static public int getTotalNumberOfQuestions() {
@@ -200,9 +138,13 @@ public class CategoriesList {
 
     public static  void main(String...args) {
         try {
-            CategoriesList.initList();
-        } catch(Exception e) {
-            System.out.println(e + ":" +  e.getCause());
+            CategoriesList ct = new CategoriesList();
+            for(Category it : categories) {
+                System.out.println(it);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
     }
 }

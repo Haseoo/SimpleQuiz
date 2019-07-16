@@ -13,11 +13,9 @@ repositories {
 
 sourceSets {
     main {
-        java {
-            srcDirs= ["src/main/java"]
-        }
         resources {
-            srcDirs= ["src/main/resources"]
+            srcDirs= ['src/main/resources']
+            includes = ['questions/*.xml']
         }
     }
 }
@@ -27,6 +25,20 @@ dependencies {
 }
 
 mainClassName = 'TextMode'
+
+jar {
+    doFirst {
+        from {
+            (configurations.runtime).collect {
+                it.isDirectory() ? it : zipTree(it)
+                include 'src/main/resources/questions/*.xml'
+            }
+        }
+    }
+    manifest {
+        attributes("Main-Class": "TextMode" )
+    }
+}
 
 run{
     standardInput = System.in
