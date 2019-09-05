@@ -1,10 +1,11 @@
 package gamecore.projections.players;
 
-import exceptions.questions.players.PlayerNotFound;
+import exceptions.players.PlayerNotFound;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
+import static utility.Constants.ALL_PLAYER_LOST_INITIAL_VALUE;
 
 public class PlayerList {
     private List<Player> players;
@@ -24,7 +25,7 @@ public class PlayerList {
     }
 
     public boolean isAllPlayerLost() {
-        return !players.stream().map(Player::isPlaying).reduce(false, (r, a) -> r || a);
+        return !players.stream().map(Player::isPlaying).reduce(ALL_PLAYER_LOST_INITIAL_VALUE, (r, a) -> r || a);
     }
 
     public void setPlayerLost(Player.PlayerInfo playerInfo) {

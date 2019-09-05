@@ -9,4 +9,5 @@ public class ExceptionMessages {
     public static final String READING_QUESTION_FROM_FILE_FORMAT = "Failed to read questions form %s file";
     public static final String REPOSITORY_INITIALIZATION_EXCEPTION = "Failed to initialize question repository";
     public static final String PLAYER_NOT_FOUND_FORMAT = "Player %s not found on the player list";
+    public static final String UNABLE_TO_DRAW_QUESTION_EXCEPTION = "Attempt to generate more question than possible";
 }

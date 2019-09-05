@@ -41,10 +41,4 @@ public class Player {
     public void playerLost() {
         isPlaying = false;
     }
-
-    public static void main(String...args) {
-        Player player = new Player(0, "Test");
-        Player.PlayerInfo playerInfo = player.new PlayerInfo();
-        System.out.println(playerInfo.getName());
-    }
 }

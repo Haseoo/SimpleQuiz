@@ -35,13 +35,21 @@ public class QuestionRepository {
         if (categories == null) {
             throw new UninitializedRepository();
         }
-        return categories[questionCoords.getCategoryNo()]
-                .getQuestions()[questionCoords.getQuestionNo()];
+        return categories[questionCoords.getCategoryIndex()]
+                .getQuestions()[questionCoords.getQuestionIndex()];
     }
 
-    public static void main(String...args)throws IOException{
-        initRepository();
-        Question q = getQuestionByCoords(new QuestionCoords(0, 2));
-        log.info(q.getContent());
+    public static Integer getNumberOfCategories() {
+        if (categories == null) {
+            throw new UninitializedRepository();
+        }
+        return categories.length;
+    }
+
+    public static Integer getNumberOfQuestionInCategory(Integer categoryIndex) {
+        if (categories == null) {
+            throw new UninitializedRepository();
+        }
+        return categories[categoryIndex].getQuestions().length;
     }
 }

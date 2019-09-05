@@ -4,6 +4,6 @@ import lombok.Value;
 
 @Value
 public class QuestionCoords {
-    private Integer categoryNo;
-    private Integer questionNo;
+    private Integer categoryIndex;
+    private Integer questionIndex;
 }

@@ -1,4 +1,4 @@
-package exceptions.questions.players;
+package exceptions.players;
 
 import static exceptions.ExceptionMessages.PLAYER_NOT_FOUND_FORMAT;
 

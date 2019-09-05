@@ -2,5 +2,9 @@
     {
         "name": "n1",
         "jsonFilePath" : "src\\main\\resources\\questions\\test.json"
+    },
+    {
+        "name": "n2",
+        "jsonFilePath" : "src\\main\\resources\\questions\\test2.json"
     }
 ]
