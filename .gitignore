@@ -10,3 +10,4 @@ gradle/
 .classpath
 gradlew
 gradlew.bat
+.project

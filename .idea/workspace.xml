@@ -2,35 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="236c2539-20ef-4e1b-9a11-cd784ddd64d8" name="Default Changelist" comment="Started working on the text mode.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/game.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/ExceptionMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/questions/ReadingQuestionFromFileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/repositories/RepositoryInitalizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/repositories/UninitializedRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/models/CategoryModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/models/QuestionModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/projections/questions/QuestionCoords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gamecore/repositories/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utility/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/SimpleQuizJava.main.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/players/PlayerInternal$Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/players/PlayerInternal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/players/PlayersList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/CategoriesList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/QuestionCord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/QuestionGenerationNotPossible.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gamecore/questions/QuestionReadingException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/questions/bio.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/questions/categoriesList.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/questions/chem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/questions/inf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamecore/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TextMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/GameAllQuestionsWFO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/GameAllQuestionsWOFO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/GameInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/IllegalPlayerException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/players/PlayerInternal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/players/PlayersList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesListImproperFormatted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionGenerationNotPossible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionReadingException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/bio.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/categoriesList.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/categoriesList.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/chem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/inf.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -64,8 +72,7 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -102,62 +109,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesListImproperFormatted.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="65" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="57" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/GameInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionsList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/repositories/QuestionRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/repositories/RepositoryInitalizationException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/ExceptionMessages.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <caret line="9" column="59" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/questions/categoriesList.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/questions/test.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="54" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/questions/ReadingQuestionFromFileException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,6 +211,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="package.json" />
         <option value="Class" />
       </list>
     </option>
@@ -199,13 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/gamecore/players/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/questions/questionList.xml" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resources/questions/inf.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/gamecore/players/PlayerInternal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamecore/players/PlayerList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionGenerationNotPossible.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionReadingException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/questions/bio.xml" />
@@ -224,11 +258,39 @@
         <option value="$PROJECT_DIR$/src/main/java/gamecore/GameAllQuestionsWFO.java" />
         <option value="$PROJECT_DIR$/src/main/java/game.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/Graph.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesListImproperFormatted.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamecore/Game.java" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test.json" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/model/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/model/QuestionContent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/model/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/model/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/model/CategoryListModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/model/QuestionModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/model/CategoryModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/models/QuestionModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/projections/questions/QuestionCord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/projections/questions/QuestionCoord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/Repositories/QuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/models/CategoryModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/models/CategoryListModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/questions/categoriesList.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/questions/test.json" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/repository/UninitializedRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/repositories/ExceptionMessages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/repositories/UninitializedRepository.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/questions/ReadingQuestionFromFileException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/ExceptionMessages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/repositories/RepositoryInitalizationException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gamecore/repositories/QuestionRepository.java" />
       </list>
     </option>
   </component>
@@ -252,29 +314,55 @@
           <expand>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -282,11 +370,54 @@
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+              <item name="projections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+              <item name="projections" type="462c0819:PsiDirectoryNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="questions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -309,13 +440,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="exception" />
       <recent name="gamecore.questions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\main\resources\questions" />
       <recent name="D:\Dokumenty\GitHub\SimpleQuiz\src\main\java\gamecore\questions" />
       <recent name="D:\Dokumenty\GitHub\SimpleQuiz\src\main\java\gamecore\players" />
     </key>
@@ -332,13 +465,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CategoriesList">
-    <configuration name="CategoriesList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gamecore.questions.CategoriesList" />
+  <component name="RunManager" selected="Application.QuestionRepository">
+    <configuration name="Constants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utility.Constants" />
       <module name="SimpleQuizJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gamecore.questions.QuestionInproperFormatted" />
+          <option name="PATTERN" value="utility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -346,12 +479,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionsList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gamecore.questions.QuestionsList" />
+    <configuration name="QuestionRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gamecore.repositories.QuestionRepository" />
       <module name="SimpleQuizJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gamecore.*" />
+          <option name="PATTERN" value="gamecore.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -406,11 +539,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuestionRepository" />
+        <item itemvalue="Application.Constants" />
         <item itemvalue="Application.TextMode" />
         <item itemvalue="Gradle.D:/Dokumenty/GitHub/SimpleQuiz/ [run]" />
         <item itemvalue="Gradle.D:/Dokumenty/GitHub/SimpleQuiz/camecore [run]" />
-        <item itemvalue="Application.QuestionsList" />
-        <item itemvalue="Application.CategoriesList" />
       </list>
     </recent_temporary>
   </component>
@@ -442,6 +575,8 @@
       <workItem from="1559064422954" duration="172000" />
       <workItem from="1563210189332" duration="1565000" />
       <workItem from="1563211790824" duration="18000" />
+      <workItem from="1567693790415" duration="629000" />
+      <workItem from="1567694444117" duration="11043000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on the first game mode.">
       <created>1555659255189</created>
@@ -461,7 +596,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65419000" />
+    <option name="totallyTimeSpent" value="77091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,7 +611,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.16644295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.2147651" />
       <window_info id="Structure" order="1" sideWeight="0.50317127" side_tool="true" weight="0.15369128" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -484,21 +619,22 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50317127" side_tool="true" weight="0.15369128" />
       <window_info id="Build Variants" order="7" sideWeight="0.5021097" side_tool="true" weight="0.25637585" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33002833" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3286119" />
-      <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="SonarLint" order="0" sideWeight="0.4986577" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4966443" weight="0.33002833" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48791945" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033557" side_tool="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49798658" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,7 +648,7 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3295302" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.16510066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.2147651" />
       <window_info id="Structure" order="1" sideWeight="0.50317127" side_tool="true" weight="0.15369128" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -520,21 +656,22 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50317127" side_tool="true" weight="0.15369128" />
       <window_info id="Build Variants" order="7" sideWeight="0.5021097" side_tool="true" weight="0.25637585" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33002833" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3286119" />
-      <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="SonarLint" order="0" sideWeight="0.4986577" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4966443" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48791945" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033557" side_tool="true" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49798658" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -558,22 +695,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Started working on the text mode." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/Player.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/questionList.xml" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/org/w3c/dom/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="189" column="19" selection-start-line="189" selection-end-line="190" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
@@ -602,13 +723,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionCord.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.xml/org/w3c/dom/Document.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -630,34 +745,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionReadingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionReadingException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoryImproperFormatted.java" />
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath" />
     <entry file="file://$PROJECT_DIR$/.project">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="55" column="99" selection-start-line="55" selection-start-column="96" selection-end-line="55" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Question.java" />
     <entry file="jar://C:/Program Files/AdoptOpenJDK/jdk-12.0.1.12-hotspot/lib/src.zip!/java.xml/javax/xml/parsers/DocumentBuilderFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -679,41 +773,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionGenerationNotPossible.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/IllegalPlayerException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/categoriesList.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/GameAllQuestionsWOFO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="34" column="22" selection-start-line="28" selection-start-column="4" selection-end-line="34" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionGenerationNotPossible.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/IllegalPlayerException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/GameAllQuestionsWOFO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/questions/chem.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -721,105 +783,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/game.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Graph.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/GameAllQuestionsWFO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/PlayerInternal.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/PlayersList.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextMode.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesListImproperFormatted.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/Game.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionsList.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/GameInitializer.java" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Graph.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/GameAllQuestionsWFO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/model/QuestionContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/model/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/PlayerInternal.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.8/1aa07070912b2caee846638641606f3b2f1f440a/lombok-1.18.8-sources.jar!/lombok/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="81">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/projections/questions/QuestionCoords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/models/CategoryListModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/models/CategoryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="107" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="107" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/categoriesList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/models/QuestionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/questions/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/questions/ReadingQuestionFromFileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/repositories/UninitializedRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/players/PlayersList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/CategoriesListImproperFormatted.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="65" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/GameInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/questions/QuestionsList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/ExceptionMessages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/repositories/RepositoryInitalizationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/projections/questions/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamecore/repositories/QuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
