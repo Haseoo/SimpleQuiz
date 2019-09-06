@@ -1,7 +1,9 @@
-.idea
+.idea/
 .settings/
 .vscode/
 .gradle/
+.gradle/4.10
+gradle/
 bin/
 out/
 build/

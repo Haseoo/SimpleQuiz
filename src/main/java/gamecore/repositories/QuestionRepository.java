@@ -16,7 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
-import static utility.Constants.CATEGORIES_LIST_FILE_PATH;
+import static gamecore.utility.Constants.CATEGORIES_LIST_FILE_PATH;
 
 @Slf4j
 @NoArgsConstructor(access = AccessLevel.PRIVATE)

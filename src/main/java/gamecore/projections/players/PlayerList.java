@@ -5,7 +5,7 @@ import exceptions.players.*;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
-import static utility.Constants.ALL_PLAYER_LOST_INITIAL_VALUE;
+import static gamecore.utility.Constants.ALL_PLAYER_LOST_INITIAL_VALUE;
 
 public class PlayerList {
     private List<Player> players;

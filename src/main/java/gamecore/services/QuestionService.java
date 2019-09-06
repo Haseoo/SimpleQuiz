@@ -1,35 +1,38 @@
-package gamecore.projections.questions;
+package gamecore.services;
 
 import exceptions.questions.UnableToDrawQuestionException;
-import gamecore.repositories.QuestionRepository;
+import gamecore.projections.questions.QuestionCoords;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static gamecore.utility.Constants.BEGIN_INDEX;
 import static java.util.stream.Collectors.groupingBy;
-import static utility.Constants.BEGIN_INDEX;
 
-public class QuestionList {
+public class QuestionService implements IQuestionService{
     private List<QuestionCoords> availableQuestions;
     private Random random;
 
-    public QuestionList() {
+    public QuestionService() {
         random = new Random();
         availableQuestions = new LinkedList<>();
-        IntStream categoryIndexesSequence = IntStream.range(BEGIN_INDEX, QuestionRepository.getNumberOfCategories());
+        IntStream categoryIndexesSequence = IntStream.range(BEGIN_INDEX, gamecore.repositories.QuestionRepository.getNumberOfCategories());
         categoryIndexesSequence.forEach(this::generateCoordsForCategory);
     }
 
-    public Integer getNumberOfAvilableQuestions() {
+    @Override
+    public Integer getNumberOfAvailableQuestions() {
         return availableQuestions.size();
     }
 
+    @Override
     public QuestionCoords getRandomQuestion() {
         int index = random.nextInt(availableQuestions.size());
         return getQuestionCoords(index);
     }
 
+    @Override
     public QuestionCoords getRandomQuestion(Integer categoryIndex) {
         List<QuestionCoords> availableQuestionsWithCategory = getQuestionCoordsWithGivenCategory(categoryIndex);
         if(availableQuestionsWithCategory.isEmpty()) {
@@ -39,6 +42,7 @@ public class QuestionList {
         return getQuestionCoords(index);
     }
 
+    @Override
     public Integer[] getAvailableCategoryIndexes() {
         Map<Integer, Long> map = availableQuestions.stream()
                 .collect(groupingBy(QuestionCoords::getCategoryIndex, Collectors.counting()));
@@ -69,7 +73,7 @@ public class QuestionList {
     }
 
     private void generateCoordsForCategory(Integer categoryIndex){
-        IntStream.range(BEGIN_INDEX, QuestionRepository.getNumberOfQuestionInCategory(categoryIndex))
+        IntStream.range(BEGIN_INDEX, gamecore.repositories.QuestionRepository.getNumberOfQuestionInCategory(categoryIndex))
         .forEach(questionIndex -> availableQuestions.add(new QuestionCoords(categoryIndex, questionIndex)));
     }
 }

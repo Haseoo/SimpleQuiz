@@ -1,4 +1,4 @@
-package utility;
+package gamecore.utility;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
