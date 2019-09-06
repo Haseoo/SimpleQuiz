@@ -4,15 +4,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import exceptions.questions.ReadingQuestionFromFileException;
 import gamecore.models.CategoryModel;
 import gamecore.models.QuestionModel;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Value;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
-@Getter
-@Setter
+@Value
 public class Category {
     private String name;
     private Question[] questions;
