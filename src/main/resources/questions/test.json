@@ -15,7 +15,7 @@
       "odp2",
       "odp3"
     ],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 0
   },
   {
     "content": "typowe pytanie3",
@@ -24,6 +24,6 @@
       "odp2",
       "odp3"
     ],
-    "correctAnswerIndex": 2
+    "correctAnswerIndex": 0
   }
 ]

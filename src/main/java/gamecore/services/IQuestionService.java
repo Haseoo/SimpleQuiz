@@ -1,10 +1,10 @@
 package gamecore.services;
 
-import gamecore.projections.questions.QuestionCoords;
+import gamecore.projections.questions.Question;
 
 public interface IQuestionService {
     Integer getNumberOfAvailableQuestions();
-    public QuestionCoords getRandomQuestion();
-    QuestionCoords getRandomQuestion(Integer categoryIndex);
-    public Integer[] getAvailableCategoryIndexes();
+    Question getRandomQuestion();
+    Question getRandomQuestion(Integer categoryIndex);
+    Integer[] getAvailableCategoryIndexes();
 }

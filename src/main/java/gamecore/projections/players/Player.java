@@ -17,19 +17,19 @@ public class Player {
 
     @NoArgsConstructor
     public class PlayerInfo {
-        Integer getId() {
+        public Integer getId() {
             return id;
         }
 
-        String getName() {
+        public String getName() {
             return name;
         }
 
-        Integer getScore() {
+        public Integer getScore() {
             return score;
         }
 
-        boolean isPlaying() {
+        public boolean isPlaying() {
             return isPlaying;
         }
     }
