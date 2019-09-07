@@ -13,39 +13,32 @@ repositories {
 
 sourceSets {
     main {
+        java {
+            
+        }
         resources {
             srcDirs= ['src/main/resources']
-            includes = ['questions/*.xml']
+        }
+    }
+    test {
+        java {
+            
         }
     }
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
     compileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
     compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    testCompile "org.assertj:assertj-core:3.11.1"
 }
 
-mainClassName = 'TextMode'
-
-jar {
-    doFirst {
-        from {
-            (configurations.runtime).collect {
-                it.isDirectory() ? it : zipTree(it)
-                include 'src/main/resources/questions/*.xml'
-            }
-        }
-    }
-    manifest {
-        attributes("Main-Class": "TextMode" )
-    }
+test {
+    useJUnitPlatform()
 }
-
-run{
-    standardInput = System.in
-}
-
 
