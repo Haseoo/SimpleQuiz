@@ -15,6 +15,6 @@ public class Constants {
     public static final Integer NUMBER_OF_TEST_QUESTION = 1;
     public static final Integer TEST_CATEGORY_INDEX = 0;
     public static final Integer TEST_QUESTION_INDEX = 0;
-    public static final String NOT_EXISTENT_CATEGORY_LIST_PATH = "x.json";
+    public static final String NOT_EXISTENT_CATEGORY_LIST_PATH = "xy.json";
     public static final boolean DO_REINITIALIZATION = true;
 }
