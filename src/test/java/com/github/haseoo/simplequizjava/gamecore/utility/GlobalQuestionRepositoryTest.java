@@ -26,7 +26,7 @@ class GlobalQuestionRepositoryTest {
     void should_throw_exception_when_get_number_of_category_uninitialized_repository() {
         //given & when & then
         Assertions
-                .assertThatThrownBy(() -> GlobalQuestionRepository.getNumberOfCategories())
+                .assertThatThrownBy(GlobalQuestionRepository::getNumberOfCategories)
                 .isInstanceOf(UninitializedRepository.class);
     }
 
