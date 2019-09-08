@@ -12,7 +12,7 @@ repositories {
 }
 
 run {
-    mainClassName = "com.github.haseoo.simplequizjava.gamecore.game.GameAllQuestions"
+    mainClassName = "com.github.haseoo.simplequizjava.gamecore.game.GameWFNQ"
 }
 
 sourceSets {

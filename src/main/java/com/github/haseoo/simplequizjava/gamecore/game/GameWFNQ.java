@@ -16,22 +16,24 @@ import java.util.List;
 import static com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPolicy.WITH_PLAYERS_FALLING_OUT;
 
 @Slf4j
-public class GameAllQuestions extends AbstractGame {
-
-    public GameAllQuestions(IQuestionService questionService,
-                            IPlayerService playerService,
-                            FallingOutPolicy fallingOutPolicy) {
+public class GameWFNQ extends AbstractGame{
+    public GameWFNQ(IQuestionService questionService,
+                    IPlayerService playerService,
+                    FallingOutPolicy fallingOutPolicy,
+                    Integer numberOfRounds) {
         super(questionService,
                 playerService,
-                questionService.getNumberOfAvailableQuestions(),
+                numberOfRounds,
                 fallingOutPolicy);
     }
 
     public static void main(String...args) throws RepositoryInitalizationException {
         List<String> testPlayers = Arrays.asList("Anna", "Wanna");
-        IGame game = new GameAllQuestions(new QuestionService(new QuestionRepository()),
-                                             new PlayerService(testPlayers),
-                                             WITH_PLAYERS_FALLING_OUT);
+        QuestionService questionService = new QuestionService(new QuestionRepository());
+        IGame game = new GameWFNQ(questionService,
+                new PlayerService(testPlayers),
+                WITH_PLAYERS_FALLING_OUT,
+                questionService.getNumberOfAvailableQuestions());
         Player.PlayerInfo[] players = game.getPlayers();
         while (!game.isGameEnded()) {
             log.info("---------");
@@ -42,6 +44,6 @@ public class GameAllQuestions extends AbstractGame {
         }
         game.getPlayersScores()
                 .forEach((playerInfo, score) -> log.info(String
-                                                .format("%s:%d%n", playerInfo.getName(), score)));
+                        .format("%s:%d%n", playerInfo.getName(), score)));
     }
 }

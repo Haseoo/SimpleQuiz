@@ -22,12 +22,12 @@ public class GameWCC extends  AbstractGame implements IGameWCC{
 
     @Override
     public Integer[] getAvailableCategoriesIndexes() {
-        return new Integer[0];
+        return getQuestionService().getAvailableCategoryIndexes();
     }
 
     @Override
     public QuestionView getNextQuestion(Integer categoryIndex) {
-        return null;
+        return QuestionView.of(getQuestionService().getRandomQuestion(categoryIndex));
     }
 
     @Override
