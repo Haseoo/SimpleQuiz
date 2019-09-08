@@ -32,6 +32,9 @@ public class QuestionService implements IQuestionService{
 
     @Override
     public Question getRandomQuestion() {
+        if(availableQuestions.isEmpty()) {
+            throw new UnableToDrawQuestionException();
+        }
         int index = random.nextInt(availableQuestions.size());
         return questionRepository.getQuestionByCoords(getQuestionCoords(index));
     }
