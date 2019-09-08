@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static com.github.haseoo.simplequizjava.testutils.PlayerServiceTestDataGenerator.generatePlayerNickames;
+import static com.github.haseoo.simplequizjava.testutils.PlayerServiceTestDataGenerator.generatePlayerNicknames;
 import static com.github.haseoo.simplequizjava.testutils.Constants.*;
 
 class PlayerServiceTest {
@@ -16,7 +16,7 @@ class PlayerServiceTest {
     private PlayerService sut;
     @BeforeEach
     void beforeEach() {
-        sut = new PlayerService(generatePlayerNickames());
+        sut = new PlayerService(generatePlayerNicknames());
     }
     @Test
     void should_return_players_list_with_three_element() {

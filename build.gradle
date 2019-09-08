@@ -11,18 +11,21 @@ repositories {
     mavenCentral()
 }
 
+run {
+    mainClassName = "com.github.haseoo.simplequizjava.gamecore.game.GameAllQuestions"
+}
+
 sourceSets {
     main {
-        java {
-            
-        }
         resources {
             srcDirs= ['src/main/resources']
+            includes = ['questions/*.*']
         }
     }
     test {
-        java {
-            
+        resources {
+            resources.srcDirs= ['src/test/resources']
+            includes = ['questions/*.*']
         }
     }
 }

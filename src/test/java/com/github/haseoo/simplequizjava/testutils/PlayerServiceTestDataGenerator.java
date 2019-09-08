@@ -5,7 +5,7 @@ import java.util.List;
 
 
 public class PlayerServiceTestDataGenerator {
-    public static List<String> generatePlayerNickames() {
+    public static List<String> generatePlayerNicknames() {
         return Arrays.asList(Constants.PLAYER_NICKNAME1, Constants.PLAYER_NICKNAME2, Constants.PLAYER_NICKNAME3);
     }
 }

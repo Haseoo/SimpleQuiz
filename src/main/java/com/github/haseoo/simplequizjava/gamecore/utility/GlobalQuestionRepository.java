@@ -1,11 +1,11 @@
 package com.github.haseoo.simplequizjava.gamecore.utility;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.haseoo.simplequizjava.gamecore.projections.questions.Category;
 import com.github.haseoo.simplequizjava.exceptions.gamecore.questions.ReadingQuestionFromFileException;
 import com.github.haseoo.simplequizjava.exceptions.gamecore.repositories.RepositoryInitalizationException;
 import com.github.haseoo.simplequizjava.exceptions.gamecore.repositories.UninitializedRepository;
 import com.github.haseoo.simplequizjava.gamecore.models.CategoryModel;
+import com.github.haseoo.simplequizjava.gamecore.projections.questions.Category;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionCoords;
 import lombok.AccessLevel;
@@ -51,5 +51,9 @@ public class GlobalQuestionRepository {
             throw new UninitializedRepository();
         }
         return categories[categoryIndex].getQuestions().length;
+    }
+
+    public static void clearRepository() {
+        categories = null;
     }
 }
