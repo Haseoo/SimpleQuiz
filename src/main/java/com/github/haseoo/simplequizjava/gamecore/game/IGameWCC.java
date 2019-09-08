@@ -1,4 +1,8 @@
-package com.github.haseoo.simplequizjava.gamecore.game.enums;
+package com.github.haseoo.simplequizjava.gamecore.game;
 
-public interface IGameWCC {
+import com.github.haseoo.simplequizjava.gamecore.views.QuestionView;
+
+public interface IGameWCC extends IGame {
+    Integer[] getAvailableCategoriesIndexes();
+    QuestionView getNextQuestion(Integer categoryIndex);
 }

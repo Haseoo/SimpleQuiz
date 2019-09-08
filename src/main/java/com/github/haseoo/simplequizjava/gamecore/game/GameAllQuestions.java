@@ -11,46 +11,20 @@ import com.github.haseoo.simplequizjava.gamecore.services.QuestionService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
-import java.util.EnumMap;
 import java.util.List;
-import java.util.Map;
-import java.util.function.BiConsumer;
 
-import static com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPolicy.WITHOUT_PLAYERS_FALLING_OUT;
 import static com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPolicy.WITH_PLAYERS_FALLING_OUT;
-import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.DEFAULT_SCORE_INCREMENT_VALUE;
 
 @Slf4j
 public class GameAllQuestions extends AbstractGame {
-
-    private static final Map<FallingOutPolicy, BiConsumer<IPlayerService, Player.PlayerInfo>> fallingOutAction;
-
-    static {
-        fallingOutAction = new EnumMap<>(FallingOutPolicy.class);
-        fallingOutAction.put(WITH_PLAYERS_FALLING_OUT, (IPlayerService::setPlayerLost));
-        fallingOutAction.put(WITHOUT_PLAYERS_FALLING_OUT, (s, p) -> {});
-    }
-
-    private FallingOutPolicy fallingOutPolicy;
 
     public GameAllQuestions(IQuestionService questionService,
                             IPlayerService playerService,
                             FallingOutPolicy fallingOutPolicy) {
         super(questionService,
                 playerService,
-                questionService.getNumberOfAvailableQuestions());
-        this.fallingOutPolicy = fallingOutPolicy;
-    }
-
-    @Override
-    public boolean answerCurrentQuestion(Integer answerIndex, Player.PlayerInfo answeringPlayer) {
-        boolean isCorrectAnswer = checkAnswer(answerIndex);
-        if (isCorrectAnswer) {
-            getPlayerService().addPointsToPlayerScore(answeringPlayer, DEFAULT_SCORE_INCREMENT_VALUE);
-        } else {
-            fallingOutAction.get(fallingOutPolicy).accept(getPlayerService(), answeringPlayer);
-        }
-        return isCorrectAnswer;
+                questionService.getNumberOfAvailableQuestions(),
+                fallingOutPolicy);
     }
 
     public static void main(String...args) throws RepositoryInitalizationException {
