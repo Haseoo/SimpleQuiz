@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="236c2539-20ef-4e1b-9a11-cd784ddd64d8" name="Default Changelist" comment="Started working on the text mode.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/questions/categoriesList.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/questions/test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameAllQuestionsWFO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameAllQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/categoriesList.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/categoriesList.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/PlayerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/PlayerServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/PlayerServiceTestDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/PlayerServiceTestDataGenerator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +21,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="113" />
+    <option name="myElementSize" value="114" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -119,11 +98,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameAllQuestions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-293">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gamecore/questions/ReadingQuestionFromFileException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gamecore/questions/UnableToDrawQuestionException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -246,6 +276,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameAllQuestions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java" />
       </list>
     </option>
   </component>
@@ -275,32 +306,6 @@
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="questions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -341,7 +346,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
               <item name="gamecore" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
@@ -456,6 +461,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.github.haseoo.simplequizjava.gamecore.services" />
       <recent name="com.github.haseoo.simplequizjava.gamecore.utility" />
       <recent name="com.github.haseoo.simplequizjava.gamecore.repositories" />
       <recent name="gamecore.services" />
@@ -609,7 +615,7 @@
       <workItem from="1567800488105" duration="5806000" />
       <workItem from="1567886035440" duration="9500000" />
       <workItem from="1567895722377" duration="242000" />
-      <workItem from="1567931495206" duration="12343000" />
+      <workItem from="1567931495206" duration="13142000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on the first game mode.">
       <created>1555659255189</created>
@@ -629,9 +635,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_SimpleQuizJava_test - 2019.09.08 at 13h 42m 07s.xml">
-      <configuration name="All in SimpleQuizJava.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GlobalQuestionRepositoryTest_should_throw_exception_when_path_not_found - 2019.09.08 at 13h 46m 34s.xml">
       <configuration name="GlobalQuestionRepositoryTest.should_throw_exception_when_path_not_found" configurationId="JUnit" />
     </history-entry>
@@ -659,9 +662,12 @@
     <history-entry file="All_in_SimpleQuizJava_test - 2019.09.08 at 13h 55m 55s.xml">
       <configuration name="All in SimpleQuizJava.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_SimpleQuizJava_test - 2019.09.08 at 14h 11m 14s.xml">
+      <configuration name="All in SimpleQuizJava.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27891000" />
+    <option name="totallyTimeSpent" value="28690000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,7 +692,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -708,7 +714,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.35369128" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.25167784" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -774,7 +780,7 @@
     <SUITE FILE_PATH="coverage/SimpleQuizJava$QuestionRepositoryTest.ic" NAME="QuestionRepositoryTest Coverage Results" MODIFIED="1567942762229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.github.haseoo.simplequizjava.gamecore.repositories.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SimpleQuizJava$All_in_SimpleQuizJava_test.ic" NAME="All in SimpleQuizJava.test Coverage Results" MODIFIED="1567943735401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SimpleQuizJava$All_in_SimpleQuizJava_test.ic" NAME="All in SimpleQuizJava.test Coverage Results" MODIFIED="1567944651226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SimpleQuizJava$PlayerServiceTest.ic" NAME="PlayerServiceTest Coverage Results" MODIFIED="1567892946346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamecore.services.*</FILTER>
     </SUITE>
@@ -884,16 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/PlayerServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -918,13 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1071,6 +1060,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-293">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gamecore/questions/UnableToDrawQuestionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gamecore/questions/ReadingQuestionFromFileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
