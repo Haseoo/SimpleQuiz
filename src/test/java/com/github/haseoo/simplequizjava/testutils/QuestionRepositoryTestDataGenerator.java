@@ -3,6 +3,8 @@ package com.github.haseoo.simplequizjava.testutils;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionCoords;
 
+import java.util.Objects;
+
 import static com.github.haseoo.simplequizjava.testutils.Constants.*;
 
 public class QuestionRepositoryTestDataGenerator {
@@ -13,5 +15,9 @@ public class QuestionRepositoryTestDataGenerator {
     }
     public static QuestionCoords generateQuestionCoords() {
         return new QuestionCoords(TEST_CATEGORY_INDEX, TEST_QUESTION_INDEX);
+    }
+
+    public static String generateCategoryListFilePath(Class<?> objClass) {
+        return Objects.requireNonNull(objClass.getClassLoader().getResource(CATEGORY_LIST_FILE_RELATIVE_PATH)).getFile();
     }
 }
