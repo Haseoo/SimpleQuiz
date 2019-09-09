@@ -25,7 +25,10 @@ public class GlobalQuestionRepository {
             ObjectMapper objectMapper = new ObjectMapper();
             try {
                 CategoryModel[] categoryModels = objectMapper.readValue(new File(categoriesListFilePath), CategoryModel[].class);
-                categories = Arrays.stream(categoryModels).map(Category::new).toArray(Category[]::new);
+                categories = Arrays
+                            .stream(categoryModels)
+                            .map(categoryModel -> new Category(categoriesListFilePath, categoryModel))
+                            .toArray(Category[]::new);
             } catch (IOException | ReadingQuestionFromFileException e) {
                 throw new RepositoryInitalizationException(e);
             }

@@ -1,6 +1,6 @@
 [
     {
         "name": "TestCategory",
-        "jsonFilePath" : "questions/test.json"
+        "jsonFilePath" : "test.json"
     }
 ]

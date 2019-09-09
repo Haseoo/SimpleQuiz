@@ -8,8 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.github.haseoo.simplequizjava.testutils.Constants.*;
-import static com.github.haseoo.simplequizjava.testutils.QuestionRepositoryTestDataGenerator.generateFirstQuestion;
-import static com.github.haseoo.simplequizjava.testutils.QuestionRepositoryTestDataGenerator.generateQuestionCoords;
+import static com.github.haseoo.simplequizjava.testutils.QuestionRepositoryTestDataGenerator.*;
 
 class QuestionRepositoryTest {
 
@@ -17,7 +16,7 @@ class QuestionRepositoryTest {
 
     @BeforeEach
     void beforeEach() throws RepositoryInitalizationException {
-        sut = new QuestionRepository();
+        sut = new QuestionRepository(generateCategoryListFilePath(getClass()));
     }
 
     @Test

@@ -1,10 +1,10 @@
 [
     {
         "name": "n1",
-        "jsonFilePath" : "questions/test.json"
+        "jsonFilePath" : "test.json"
     },
     {
         "name": "n2",
-        "jsonFilePath" : "questions/test2.json"
+        "jsonFilePath" : "test2.json"
     }
 ]

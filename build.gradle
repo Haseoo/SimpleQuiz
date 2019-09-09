@@ -19,7 +19,6 @@ sourceSets {
     main {
         resources {
             srcDirs= ['src/main/resources']
-            includes = ['questions/*.*']
         }
     }
     test {

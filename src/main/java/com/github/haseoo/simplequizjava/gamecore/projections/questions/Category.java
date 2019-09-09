@@ -9,18 +9,19 @@ import lombok.Value;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Objects;
+
+import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.QUESTION_PATH_FORMATTER;
 
 @Value
 public class Category {
     private String name;
     private Question[] questions;
 
-    public Category (CategoryModel categoryModel) {
+    public Category (String categoryListFilePath ,CategoryModel categoryModel) {
         ObjectMapper objectMapper = new ObjectMapper();
         name = categoryModel.getName();
         QuestionModel[] questionModels;
-        String absoluteCategoryPath = getCategoryPath(categoryModel.getJsonFilePath());
+        String absoluteCategoryPath = getCategoryPath(categoryListFilePath, categoryModel.getJsonFilePath());
         try {
             questionModels = objectMapper.readValue(new File(absoluteCategoryPath), QuestionModel[].class);
         } catch (IOException e) {
@@ -29,7 +30,11 @@ public class Category {
         questions = Arrays.stream(questionModels).map(Question::of).toArray(Question[]::new);
     }
 
-    private String getCategoryPath(String relativePath) {
-        return Objects.requireNonNull(getClass().getClassLoader().getResource(relativePath)).getFile();
+    private String getCategoryPath(String categoryListFilePath, String relativePath) {
+        return String.format(QUESTION_PATH_FORMATTER, getFileFolderPath(categoryListFilePath), relativePath);
+    }
+
+    private String getFileFolderPath(String categoryListFilePath) {
+        return new File(categoryListFilePath).getParent();
     }
 }

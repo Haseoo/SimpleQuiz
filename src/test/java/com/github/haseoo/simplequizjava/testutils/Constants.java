@@ -6,6 +6,7 @@ public class Constants {
     public static final String PLAYER_NICKNAME2 = "player2";
     public static final String PLAYER_NICKNAME3 = "player3";
     public static final Integer PLAYER_POINTS = 3;
+    public static final String CATEGORY_LIST_FILE_RELATIVE_PATH = "questions/categoriesList.json";
     public static final String FIRST_TEST_QUESTION_CONTENT = "TestQuestion1";
     public static final String FIRST_TEST_QUESTION_ANSWER1 = "answer1";
     public static final String FIRST_TEST_QUESTION_ANSWER2 = "answer2";
