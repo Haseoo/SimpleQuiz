@@ -59,4 +59,8 @@ public class GlobalQuestionRepository {
     public static void clearRepository() {
         categories = null;
     }
+
+    public static boolean isInitialized() {
+        return categories != null;
+    }
 }

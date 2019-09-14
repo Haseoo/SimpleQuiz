@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="gameModesVBox" alignment="CENTER" fillWidth="false" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.haseoo.simplequizjava.gui.controllers.GameModesController">
+   <children>
+      <Label text="Choice your game mode:">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Separator prefWidth="200.0" visible="false" />
+      <CheckBox mnemonicParsing="false" text="Players falling out" />
+      <Separator layoutX="49.0" layoutY="46.0" prefWidth="200.0" visible="false" />
+   </children>
+</VBox>
