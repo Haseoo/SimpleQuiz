@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <HBox alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="-1.0">
+      <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@icon.png" />
+          </image>
+        </ImageView>
+        <Label alignment="CENTER" text="Simple Quiz Java">
+          <font>
+            <Font size="45.0" />
+          </font>
+        </Label>
+      </children>
+    </HBox>
+    <Label text="Made by Haseoo">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Hyperlink text="github.com/Haseoo/SimpleQuizJava" />
+    <Label text="2019" />
+  </children>
+</VBox>

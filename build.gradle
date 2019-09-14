@@ -1,6 +1,7 @@
 plugins {
     id 'java'
 	id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
 }
 
 version '1.0-SNAPSHOT'
@@ -12,13 +13,18 @@ repositories {
 }
 
 run {
-    mainClassName = "com.github.haseoo.simplequizjava.gamecore.game.GameWFNQ"
+    mainClassName = "com.github.haseoo.simplequizjava.gui.GameApp"
+}
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 sourceSets {
     main {
         resources {
-            srcDirs= ['src/main/resources']
+            srcDirs= ['src/main/resources', 'src/main/resources/windows']
+            includes = ['*.fxml', 'logo.png', 'icon.png']
         }
     }
     test {
