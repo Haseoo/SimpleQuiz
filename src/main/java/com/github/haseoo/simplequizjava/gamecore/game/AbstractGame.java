@@ -21,7 +21,7 @@ import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.DEFAUL
 
 @Getter
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
-public abstract class AbstractGame implements IGame{
+abstract class AbstractGame implements IGame{
 
     private static final Map<FallingOutPolicy, BiConsumer<IPlayerService, Player.PlayerInfo>> fallingOutAction;
 

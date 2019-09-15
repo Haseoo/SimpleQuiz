@@ -1,5 +1,6 @@
 package com.github.haseoo.simplequizjava.gui;
 
+import com.github.haseoo.simplequizjava.gui.controllers.MainWindowController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,17 +10,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static com.github.haseoo.simplequizjava.gui.utilities.Constants.*;
+import static com.github.haseoo.simplequizjava.gui.utilities.Utilities.getResourceURL;
+
 public class GameApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/mainWindow.fxml"));
-
+        FXMLLoader mainWindow = new FXMLLoader(getResourceURL(getClass(), MAIN_WINDOW_FXML_PATH));
+        Parent root = mainWindow.load();
+        mainWindow.<MainWindowController>getController().setApplication(this);
 
         Scene scene = new Scene(root);
 
-        stage.setTitle("Simple Quiz");
-        stage.getIcons().add(new Image("icon.png"));
+        stage.setTitle(APPLICATION_NAME);
+        stage.getIcons().add(new Image(ICON_FILE_PATH));
         stage.setScene(scene);
         stage.show();
     }

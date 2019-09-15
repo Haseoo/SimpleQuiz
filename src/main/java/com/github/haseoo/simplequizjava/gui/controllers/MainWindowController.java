@@ -1,45 +1,89 @@
 package com.github.haseoo.simplequizjava.gui.controllers;
 
+import com.github.haseoo.simplequizjava.gamecore.utility.GlobalQuestionRepository;
+import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import lombok.Setter;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+
+import static com.github.haseoo.simplequizjava.gui.utilities.Constants.*;
+import static com.github.haseoo.simplequizjava.gui.utilities.Utilities.getResourceURL;
 
 
 public class MainWindowController {
+
+    private static Map<Boolean, URL> questionRepositoryStatusNodes;
+
+    static {
+        questionRepositoryStatusNodes = new HashMap<>();
+        questionRepositoryStatusNodes.put(true, getResourceURL(MainWindowController.class, QUESTION_LOADED_FXML_PATH));
+        questionRepositoryStatusNodes.put(false, getResourceURL(MainWindowController.class, QUESTION_NOT_LOADED_FXML_PATH));
+    }
+
+    @Setter
+    private Application application;
+
     @FXML
     private ScrollPane scrollPane;
+    @FXML
+    private BorderPane borderPane;
+    @FXML
+    private MenuItem loadRepository;
 
     @FXML
     private void initialize() throws IOException {
-        FXMLLoader newGame = new FXMLLoader(getClass().getResource("/gameModes.fxml"));
+        loadRepository.setDisable(false);
+        FXMLLoader newGame = new FXMLLoader(getResourceURL(getClass(), GAME_MODES_FXML_PATH));
         Node newNode = newGame.load();
         newGame.<GameModesController>getController().setScrollPane(scrollPane);
         scrollPane.setContent(newNode);
+        setRepositoryStatus();
     }
 
     @FXML
     private void onAbout() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/OnAbout.fxml"));
-        final Stage dialog = new Stage();
-        dialog.initModality(Modality.APPLICATION_MODAL);
-        Scene scene = new Scene(root);
-
-        dialog.setTitle("On About");
-        dialog.setScene(scene);
-        dialog.show();
-
+        FXMLLoader onAbout = new FXMLLoader(getResourceURL(getClass(), ON_ABOUT_FXML_PATH));
+        Parent root = onAbout.load();
+        onAbout.<OnAboutController>getController().setApplication(application);
+        prepareDialog(root, ON_ABOUT_TITLE);
     }
 
     @FXML
     private void onExit() {
         Platform.exit();
+    }
+
+    @FXML
+    private void onLoadRepository() throws IOException {
+        Parent root = FXMLLoader.load(getResourceURL(getClass(), REPOSITORY_INITIALIZATION_DIALOG_FXML_PATH));
+        prepareDialog(root, LOAD_REPOSITORY_TITLE);
+        initialize();
+    }
+
+    private void setRepositoryStatus() throws IOException {
+        borderPane.setBottom(FXMLLoader.load(questionRepositoryStatusNodes.get(GlobalQuestionRepository.isInitialized())));
+    }
+
+    private void prepareDialog(Parent root, String dialogTitle) {
+        final Stage dialog = new Stage();
+        dialog.initModality(Modality.APPLICATION_MODAL);
+        Scene scene = new Scene(root);
+        dialog.setTitle(dialogTitle);
+        dialog.setScene(scene);
+        dialog.showAndWait();
     }
 }

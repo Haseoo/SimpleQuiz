@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.haseoo.simplequizjava.gui.controllers.OnAboutController">
+  <children>
+    <HBox alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="-1.0">
+      <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@icon.png" />
+          </image>
+        </ImageView>
+        <Label alignment="CENTER" text="Simple Quiz Java">
+          <font>
+            <Font size="45.0" />
+          </font>
+        </Label>
+      </children>
+    </HBox>
+    <Label text="Made by Haseoo">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Hyperlink onAction="#onProjectLink" text="Github project" />
+    <Label text="2019" />
+      <Hyperlink layoutX="122.0" layoutY="196.0" onAction="#onFontLink" text="&quot;Good time&quot; font used in logo" />
+  </children>
+</VBox>

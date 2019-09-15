@@ -24,7 +24,7 @@ sourceSets {
     main {
         resources {
             srcDirs= ['src/main/resources', 'src/main/resources/windows']
-            includes = ['*.fxml', 'logo.png', 'icon.png']
+            includes = ['*.fxml', '*.png']
         }
     }
     test {
