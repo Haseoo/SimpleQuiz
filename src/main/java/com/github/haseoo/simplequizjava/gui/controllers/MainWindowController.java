@@ -1,11 +1,11 @@
 package com.github.haseoo.simplequizjava.gui.controllers;
 
+import com.github.haseoo.simplequizjava.gamecore.repositories.QuestionRepository;
 import com.github.haseoo.simplequizjava.gamecore.utility.GlobalQuestionRepository;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
@@ -13,7 +13,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import lombok.Setter;
+import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,7 +23,7 @@ import java.util.Map;
 import static com.github.haseoo.simplequizjava.gui.utilities.Constants.*;
 import static com.github.haseoo.simplequizjava.gui.utilities.Utilities.getResourceURL;
 
-
+@RequiredArgsConstructor
 public class MainWindowController {
 
     private static Map<Boolean, URL> questionRepositoryStatusNodes;
@@ -34,8 +34,7 @@ public class MainWindowController {
         questionRepositoryStatusNodes.put(false, getResourceURL(MainWindowController.class, QUESTION_NOT_LOADED_FXML_PATH));
     }
 
-    @Setter
-    private Application application;
+    private final Application application;
 
     @FXML
     private ScrollPane scrollPane;
@@ -46,19 +45,18 @@ public class MainWindowController {
 
     @FXML
     private void initialize() throws IOException {
-        loadRepository.setDisable(false);
         FXMLLoader newGame = new FXMLLoader(getResourceURL(getClass(), GAME_MODES_FXML_PATH));
-        Node newNode = newGame.load();
-        newGame.<GameModesController>getController().setScrollPane(scrollPane);
-        scrollPane.setContent(newNode);
+        newGame.setController(new GameModesController(new QuestionRepository(), scrollPane, loadRepository));
+        scrollPane.setContent(newGame.load());
+        loadRepository.setDisable(false);
         setRepositoryStatus();
     }
 
     @FXML
     private void onAbout() throws IOException {
         FXMLLoader onAbout = new FXMLLoader(getResourceURL(getClass(), ON_ABOUT_FXML_PATH));
+        onAbout.setController(new OnAboutController(application));
         Parent root = onAbout.load();
-        onAbout.<OnAboutController>getController().setApplication(application);
         prepareDialog(root, ON_ABOUT_TITLE);
     }
 

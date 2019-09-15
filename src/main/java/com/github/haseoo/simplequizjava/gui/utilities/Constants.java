@@ -1,5 +1,9 @@
 package com.github.haseoo.simplequizjava.gui.utilities;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Constants {
     public static final String APPLICATION_NAME = "Simple Quiz";
     public static final String ON_ABOUT_TITLE = "On about";
@@ -23,4 +27,5 @@ public class Constants {
     public static final String QUESTION_NOT_LOADED_FXML_PATH = "questionNotLoaded.fxml";
     public static final String ON_ABOUT_FXML_PATH = "onAbout.fxml";
     public static final String REPOSITORY_INITIALIZATION_DIALOG_FXML_PATH = "loadRepository.fxml";
+    public static final String  PLAYER_INFO_FXML_PATH = "playerInfo.fxml";
 }

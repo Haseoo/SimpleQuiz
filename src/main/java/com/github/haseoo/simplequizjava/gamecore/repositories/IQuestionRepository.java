@@ -7,4 +7,5 @@ public interface IQuestionRepository {
     Question getQuestionByCoords(QuestionCoords questionCoords);
     Integer getNumberOfCategories();
     Integer getNumberOfQuestionInCategory(Integer categoryIndex);
+    Integer getTotalNumberOfQuestions();
 }

@@ -1,8 +1,12 @@
 package com.github.haseoo.simplequizjava.gui.utilities;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import java.net.URL;
 import java.util.Objects;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Utilities {
     public static URL getResourceURL(Class<?> clazz, String relativePath) {
         return Objects.requireNonNull(clazz.getClassLoader().getResource(relativePath));

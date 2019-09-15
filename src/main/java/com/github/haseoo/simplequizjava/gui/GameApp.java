@@ -18,8 +18,8 @@ public class GameApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader mainWindow = new FXMLLoader(getResourceURL(getClass(), MAIN_WINDOW_FXML_PATH));
+        mainWindow.setController(new MainWindowController(this));
         Parent root = mainWindow.load();
-        mainWindow.<MainWindowController>getController().setApplication(this);
 
         Scene scene = new Scene(root);
 
