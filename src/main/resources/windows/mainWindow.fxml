@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="borderPane" prefHeight="-1.0" prefWidth="-1.0" snapToPixel="true" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.haseoo.simplequizjava.gui.controllers.MainWindowController">
+<BorderPane fx:id="borderPane" prefHeight="-1.0" prefWidth="-1.0" snapToPixel="true" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
   <top>
     <VBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" visible="true">
       <children>
@@ -44,7 +44,7 @@
     </VBox>
   </top>
    <center>
-      <ScrollPane fx:id="scrollPane" fitToWidth="true" BorderPane.alignment="TOP_CENTER">
+      <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="300.0" BorderPane.alignment="TOP_CENTER">
          <BorderPane.margin>
             <Insets />
          </BorderPane.margin></ScrollPane>
