@@ -1,4 +1,4 @@
-package com.github.haseoo.simplequizjava.gui.projections;
+package com.github.haseoo.simplequizjava.gui.utilities;
 
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;

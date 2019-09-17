@@ -1,11 +1,14 @@
 package com.github.haseoo.simplequizjava.gui.controllers;
 
+import com.github.haseoo.simplequizjava.gui.utilities.GameInitializer;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+@RequiredArgsConstructor
 @Slf4j
 public class PlayerInfoController {
     @FXML
@@ -15,10 +18,13 @@ public class PlayerInfoController {
     @FXML
     private TextField playerNickname;
 
+    private final GameInitializer gameInitializer;
+
     @FXML
     private void onStartGame() {
         if(!playerList.getItems().isEmpty()) {
-            log.info(playerList.getItems().toString());
+            gameInitializer.setPlayerNicknames(playerList.getItems());
+            log.info(gameInitializer.toString());
         }
     }
 

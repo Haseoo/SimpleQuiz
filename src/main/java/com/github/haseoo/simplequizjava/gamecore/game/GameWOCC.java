@@ -17,8 +17,8 @@ import static com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPol
 import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.CATEGORIES_LIST_FILE_DEFAULT_PATH;
 
 @Slf4j
-public class GameWFNQ extends AbstractGame{
-    public GameWFNQ(IQuestionService questionService,
+public class GameWOCC extends AbstractGame{
+    public GameWOCC(IQuestionService questionService,
                     IPlayerService playerService,
                     FallingOutPolicy fallingOutPolicy,
                     Integer numberOfRounds) {
@@ -31,7 +31,7 @@ public class GameWFNQ extends AbstractGame{
     public static void main(String...args) throws RepositoryInitalizationException {
         List<String> testPlayers = Arrays.asList("Anna", "Wanna");
         QuestionService questionService = new QuestionService(new QuestionRepository(CATEGORIES_LIST_FILE_DEFAULT_PATH));
-        IGame game = new GameWFNQ(questionService,
+        IGame game = new GameWOCC(questionService,
                 new PlayerService(testPlayers),
                 WITH_PLAYERS_FALLING_OUT,
                 questionService.getNumberOfAvailableQuestions());
