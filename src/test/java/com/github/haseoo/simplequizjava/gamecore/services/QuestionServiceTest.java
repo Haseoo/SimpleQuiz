@@ -4,12 +4,14 @@ import com.github.haseoo.simplequizjava.exceptions.gamecore.questions.UnableToDr
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionCoords;
 import com.github.haseoo.simplequizjava.gamecore.repositories.QuestionRepository;
+
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
 
 import static com.github.haseoo.simplequizjava.testutils.Constants.*;
+import static com.github.haseoo.simplequizjava.testutils.QuestionRepositoryTestDataGenerator.generateCategory;
 import static com.github.haseoo.simplequizjava.testutils.QuestionRepositoryTestDataGenerator.generateFirstQuestion;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
@@ -58,6 +60,7 @@ class QuestionServiceTest {
     void should_result_two_available_categories() {
         //given
         sut.getRandomQuestion();
+        when(questionRepository.getCategoryByIndex(any())).thenReturn(generateCategory());
         //when & then
         Assertions.assertThat(sut.getAvailableCategoryIndexes().length).isEqualTo(NUMBER_OF_TEST_CATEGORIES - 1);
     }

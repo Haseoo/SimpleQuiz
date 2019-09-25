@@ -2,6 +2,7 @@ package com.github.haseoo.simplequizjava.testutils;
 
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionCoords;
+import com.github.haseoo.simplequizjava.gamecore.projections.questions.Category;
 
 import java.util.Objects;
 
@@ -19,5 +20,9 @@ public class QuestionRepositoryTestDataGenerator {
 
     public static String generateCategoryListFilePath(Class<?> objClass) {
         return Objects.requireNonNull(objClass.getClassLoader().getResource(CATEGORY_LIST_FILE_RELATIVE_PATH)).getFile();
+    }
+
+    public static Category generateCategory() {
+        return new Category(CATEGORY_TEST_NAME, new Question[] {generateFirstQuestion()});
     }
 }
