@@ -1,6 +1,7 @@
 package com.github.haseoo.simplequizjava.gamecore.repositories;
 
 import com.github.haseoo.simplequizjava.exceptions.gamecore.repositories.RepositoryInitalizationException;
+import com.github.haseoo.simplequizjava.gamecore.projections.questions.Category;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionCoords;
 import com.github.haseoo.simplequizjava.gamecore.utility.GlobalQuestionRepository;
@@ -37,5 +38,10 @@ public class QuestionRepository implements IQuestionRepository{
     public Integer getTotalNumberOfQuestions() {
         IntStream numberOfCategories = IntStream.range(BEGIN_INDEX, getNumberOfCategories());
         return numberOfCategories.map(this::getNumberOfQuestionInCategory).sum();
+    }
+
+    @Override
+    public Category getCategoryByIndex(Integer index) {
+        return GlobalQuestionRepository.getCategoryByIndex(index);
     }
 }

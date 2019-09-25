@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="236c2539-20ef-4e1b-9a11-cd784ddd64d8" name="Default Changelist" comment="Started working on the text mode.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/GameInitializerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/GameInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/enums/GameMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/ExceptionMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/ExceptionMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWFNQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWOCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GameModesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GameModesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayerInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections/NumberOfQuestionsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/NumberOfQuestionsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +22,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="126" />
+    <option name="myElementSize" value="144" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -90,28 +77,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GameModesController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/CategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayerInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="156">
+              <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,10 +89,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/GameInitializer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayControllerWCC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="-119">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#4524#4525#0" expanded="true" />
+                <element signature="e#4573#4574#0" expanded="true" />
+                <element signature="e#3057#3058#0" expanded="true" />
+                <element signature="e#3173#3174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayControllerWOCC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,51 +116,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/GameInitializerException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-              <folding>
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="317">
+              <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/enums/GameMode.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWCC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWOCC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,10 +137,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/IGameWCC.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/IQuestionRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="204">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/PlayerServiceTestDataGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+              <folding>
+                <element signature="e#1905#1906#0" expanded="true" />
+                <element signature="e#1978#1979#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1185#1186#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,10 +205,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="package.json" />
         <option value="JavaFXApplication" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="package.json" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -225,6 +231,15 @@
       <find>G</find>
       <find>getRes</find>
       <find>gam</find>
+      <find>answ</find>
+      <find>playerResignMenuItem.setDisable(true)</find>
+      <find>nextBu</find>
+      <find>answerPlayerList.setNext</find>
+      <find>answerPlayerList.setNext();</find>
+      <find>answerPlayerList.setNext()</find>
+      <find>+ 1</find>
+      <find>log</find>
+      <find>getne</find>
     </findStrings>
     <replaceStrings>
       <replace>Inf</replace>
@@ -242,57 +257,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/enums/IGameWCC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/IGameWCC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameAllQuestions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameFixQuestions.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/questions/test2.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameFNOQ.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWFNOQ.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/questions/categoriesList.json" />
-        <option value="$PROJECT_DIR$/src/test/resources/questions/categoriesList.json" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections/GameModes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/models/GameModesModel.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/gameModes.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/models/GameModeModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections/GameMode.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/OnAbout.fxml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/AbstractGame.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/LoadRepository.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/LoadRepositoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/questionLoaded.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/questionNotLoaded.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/IQuestionRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections/NumberOfQuestionsComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/gameModes.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/onAbout.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/OnAboutController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/GameApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayersInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/MainWindowController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/mainWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/windows/playerInfo.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWFNQ.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWCC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/enums/gameMode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/GUI/GameInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/GameInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/GameInitializerException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayerInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GameModesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/FXMLLoadException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/IGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/GameInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/gamePlayWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/questionWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GameModesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/playerList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/QuestionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/scoreTableController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/ScoreTableController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/TableRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections/TableRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/scoreTable.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/players/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/NumberOfQuestionsComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/ExceptionMessages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/enums/GameMode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/unsuppotredGameMode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/UnsuppotredGameMode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/UnsupportedGameMode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/badAnswer.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/goodAnswer.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/GameApp.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/package.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/views/CategoryView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/IGameWCC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/IQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/IQuestionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/PlayerList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/IPrintQuestion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/AbstractGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWCC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayerInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayControllerWOCC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/AbstractGamePlayController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayControllerWCC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/categoryWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/windows/gameModes.fxml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/PlayerServiceTestDataGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java" />
       </list>
     </option>
   </component>
@@ -321,6 +336,11 @@
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -343,6 +363,25 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
@@ -361,7 +400,46 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
               <item name="gamecore" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
+              <item name="gamecore" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleQuizJava" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="simplequizjava" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleQuizJava" type="b2602c69:ProjectViewProjectNode" />
@@ -412,8 +490,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,7 +506,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="extract.method.default.visibility" value="protected" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/gamecore/questions" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/windows" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -449,25 +527,25 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\test\java" />
+      <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\main\resources\questions" />
+      <recent name="D:\Dokumenty\GitHub\SimpleQuiz\src\main\java\gamecore\questions" />
+      <recent name="D:\Dokumenty\GitHub\SimpleQuiz\src\main\java\gamecore\players" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="exception" />
       <recent name="gamecore.questions" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.haseoo.simplequizjava.gui.controllers" />
+      <recent name="gamecore.game" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\main\resources\windows" />
       <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\main\resources" />
       <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\test\resources" />
       <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\main\resources\questions" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.github.haseoo.simplequizjava.gui.controllers" />
-      <recent name="gamecore.game" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\test\java" />
-      <recent name="C:\Users\dawid\Desktop\SimpleQuizJava\src\main\resources\questions" />
-      <recent name="D:\Dokumenty\GitHub\SimpleQuiz\src\main\java\gamecore\questions" />
-      <recent name="D:\Dokumenty\GitHub\SimpleQuiz\src\main\java\gamecore\players" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -482,13 +560,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.SimpleQuizJava [run]">
-    <configuration name="GameWOCC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.haseoo.simplequizjava.gamecore.game.GameWOCC" />
+  <component name="RunManager" selected="JUnit.QuestionServiceTest.should_result_two_available_categories">
+    <configuration name="PlayerList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.haseoo.simplequizjava.gui.utilities.PlayerList" />
       <module name="SimpleQuizJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.haseoo.simplequizjava.gamecore.game.*" />
+          <option name="PATTERN" value="com.github.haseoo.simplequizjava.gui.utilities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -515,6 +593,14 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="All in SimpleQuizJava.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimpleQuizJava.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in SimpleQuizJava.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SimpleQuizJava.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -523,22 +609,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SimpleQuizJava.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.haseoo.simplequizjava.gamecore.repositories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.haseoo.simplequizjava.gamecore.repositories" />
-      <option name="MAIN_CLASS_NAME" value="com.github.haseoo.simplequizjava.gamecore.repositories.QuestionRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuestionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionServiceTest.should_result_two_available_categories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SimpleQuizJava.test" />
       <extension name="coverage">
         <pattern>
@@ -548,18 +619,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.github.haseoo.simplequizjava.gamecore.services" />
       <option name="MAIN_CLASS_NAME" value="com.github.haseoo.simplequizjava.gamecore.services.QuestionServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="should_result_two_available_categories" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestionServiceTest.should_result_two_available_categories" />
+        <item itemvalue="JUnit.All in SimpleQuizJava.test (1)" />
         <item itemvalue="Gradle.SimpleQuizJava [run]" />
+        <item itemvalue="Application.PlayerList" />
         <item itemvalue="JUnit.All in SimpleQuizJava.test" />
-        <item itemvalue="JUnit.QuestionRepositoryTest" />
-        <item itemvalue="Application.GameWOCC" />
-        <item itemvalue="JUnit.QuestionServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -604,7 +676,14 @@
       <workItem from="1568489995148" duration="6000" />
       <workItem from="1568557227755" duration="7705000" />
       <workItem from="1568577947729" duration="6689000" />
-      <workItem from="1568706499654" duration="5349000" />
+      <workItem from="1568706499654" duration="6679000" />
+      <workItem from="1568715893733" duration="13968000" />
+      <workItem from="1568732020478" duration="25247000" />
+      <workItem from="1568791459409" duration="867000" />
+      <workItem from="1568796885585" duration="1277000" />
+      <workItem from="1569336214882" duration="592000" />
+      <workItem from="1569340587229" duration="11862000" />
+      <workItem from="1569414865582" duration="17437000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on the first game mode.">
       <created>1555659255189</created>
@@ -624,15 +703,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuestionServiceTest_should_result_two_available_categories - 2019.09.08 at 15h 57m 51s.xml">
-      <configuration name="QuestionServiceTest.should_result_two_available_categories" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuestionServiceTest - 2019.09.08 at 15h 58m 30s.xml">
-      <configuration name="QuestionServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuestionServiceTest - 2019.09.08 at 15h 59m 02s.xml">
-      <configuration name="QuestionServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QuestionServiceTest_should_throw_exception_when_drawing_fifth_question - 2019.09.08 at 16h 03m 31s.xml">
       <configuration name="QuestionServiceTest.should_throw_exception_when_drawing_fifth_question" configurationId="JUnit" />
     </history-entry>
@@ -654,9 +724,18 @@
     <history-entry file="All_in_SimpleQuizJava_test - 2019.09.08 at 16h 30m 22s.xml">
       <configuration name="All in SimpleQuizJava.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_SimpleQuizJava_test_(1) - 2019.09.25 at 20h 12m 16s.xml">
+      <configuration name="All in SimpleQuizJava.test (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestionServiceTest_should_result_two_available_categories - 2019.09.25 at 20h 14m 51s.xml">
+      <configuration name="QuestionServiceTest.should_result_two_available_categories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestionServiceTest_should_result_two_available_categories - 2019.09.25 at 20h 17m 21s.xml">
+      <configuration name="QuestionServiceTest.should_result_two_available_categories" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87431000" />
+    <option name="totallyTimeSpent" value="160011000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -669,8 +748,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20738254" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -679,19 +759,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49932885" weight="0.26628897" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731544" weight="0.26628897" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49932885" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026846" side_tool="true" weight="0.26628897" />
       <window_info anchor="bottom" id="SonarLint" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -751,39 +832,39 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java</url>
           <line>38</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java</url>
-          <line>30</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/MainWindowController.java</url>
-          <line>62</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/PlayerList.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayControllerWCC.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -796,16 +877,364 @@
       <FILTER>com.github.haseoo.simplequizjava.gamecore.services.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SimpleQuizJava$All_in_SimpleQuizJava_test.ic" NAME="All in SimpleQuizJava.test Coverage Results" MODIFIED="1567952996316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SimpleQuizJava$SimpleQuizJava__run_.ic" NAME="SimpleQuizJava [run] Coverage Results" MODIFIED="1569422858612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SimpleQuizJava$PlayerServiceTest.ic" NAME="PlayerServiceTest Coverage Results" MODIFIED="1567892946346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamecore.services.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SimpleQuizJava$All_in_SimpleQuizJava_test__2_.ic" NAME="All in SimpleQuizJava.test (2) Coverage Results" MODIFIED="1567948232613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/GameInitializerException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/GameInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/LoadRepository.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="233" selection-start-line="10" selection-start-column="233" selection-end-line="10" selection-end-column="233" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/playerInfo.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="175" selection-start-line="12" selection-start-column="175" selection-end-line="12" selection-end-column="175" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GameModesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/scoreTable.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections/TableRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWOCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/players/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/NumberOfQuestionsComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/UnsupportedGameMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/goodAnswer.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/badAnswer.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/ScoreTableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/GameApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/ExceptionMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/questionWindow.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/package.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/views/CategoryView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="58" column="45" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="45" />
+          <folding>
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2708#2709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/IQuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/PlayerList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/IGameWCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/11.0.2/2b7bb98d32266093bd49acd8778bedb55a326c20/javafx-fxml-11.0.2-sources.jar!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="2277" column="16" selection-start-line="2277" selection-start-column="16" selection-end-line="2277" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/IPrintQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/AbstractGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2139#2140#0" expanded="true" />
+            <element signature="e#3412#3413#0" expanded="true" />
+            <element signature="e#3449#3450#0" expanded="true" />
+            <element signature="e#3476#3477#0" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/IGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayerInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="64" column="88" selection-start-line="64" selection-start-column="88" selection-end-line="64" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayControllerWCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#4524#4525#0" expanded="true" />
+            <element signature="e#4573#4574#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/gameModes.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/mainWindow.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="164" selection-start-line="12" selection-start-column="164" selection-end-line="12" selection-end-column="164" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/gamePlayWindow.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/categoryWindow.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/AbstractGamePlayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-492">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GamePlayControllerWOCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -815,355 +1244,76 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/models/CategoryModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/PlayerServiceTestDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="54" />
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="317">
+          <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/resources/main/gameModes.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/gameModes.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/models/GameModeModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/projections/GameMode.java" />
-    <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/errorSign.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/Pdn/errorSign.pdn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3247" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/Pdn/okSign.pdn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/okSign.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/LoadRepository.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="233" selection-start-line="10" selection-start-column="233" selection-end-line="10" selection-end-column="233" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/questionLoaded.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/questionWindow.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/IQuestionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/AbstractGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" lean-forward="true" selection-start-line="25" selection-end-line="83" />
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/gameModes.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/repositories/QuestionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="263">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding>
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/projections/questions/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/onAbout.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/testutils/QuestionRepositoryTestDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="143" selection-start-line="10" selection-start-column="143" selection-end-line="10" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/GameApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/LoadRepositoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state relative-caret-position="342">
+          <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1831#1832#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1963#1964#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/OnAboutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/mainWindow.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="164" selection-start-line="12" selection-start-column="164" selection-end-line="12" selection-end-column="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gamecore/players/PlayerNotFound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gamecore/questions/ReadingQuestionFromFileException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/playerInfo.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="175" selection-start-line="12" selection-start-column="175" selection-end-line="12" selection-end-column="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/IGameWCC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/NumberOfQuestionsComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWOCC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/game/GameWCC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/enums.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/services/QuestionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/questionNotLoaded.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/windows/scoreTable.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/GlobalQuestionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/gui/GameInitializerException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/exceptions/ExceptionMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gamecore/utility/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/GameModesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/controllers/PlayerInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/GameInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/haseoo/simplequizjava/gui/utilities/enums/GameMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
           </folding>
         </state>
       </provider>

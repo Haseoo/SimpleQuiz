@@ -5,23 +5,29 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 import static com.github.haseoo.simplequizjava.gui.utilities.Constants.*;
 import static com.github.haseoo.simplequizjava.gui.utilities.Utilities.getResourceURL;
-
 public class GameApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader mainWindow = new FXMLLoader(getResourceURL(getClass(), MAIN_WINDOW_FXML_PATH));
+        FXMLLoader mainWindow = new FXMLLoader(getResourceURL(MAIN_WINDOW_FXML_PATH));
         mainWindow.setController(new MainWindowController(this));
         Parent root = mainWindow.load();
 
         Scene scene = new Scene(root);
+        scene.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.H) {
+                new Alert(Alert.AlertType.INFORMATION, "HHHHHHHHHHHH").showAndWait();
+            }
+        });
 
         stage.setTitle(APPLICATION_NAME);
         stage.getIcons().add(new Image(ICON_FILE_PATH));

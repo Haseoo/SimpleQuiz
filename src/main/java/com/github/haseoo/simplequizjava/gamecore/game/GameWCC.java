@@ -1,9 +1,10 @@
 package com.github.haseoo.simplequizjava.gamecore.game;
 
 import com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPolicy;
-import com.github.haseoo.simplequizjava.gamecore.projections.players.Player;
+import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.services.IPlayerService;
 import com.github.haseoo.simplequizjava.gamecore.services.IQuestionService;
+import com.github.haseoo.simplequizjava.gamecore.views.CategoryView;
 import com.github.haseoo.simplequizjava.gamecore.views.QuestionView;
 
 public class GameWCC extends  AbstractGame implements IGameWCC{
@@ -16,19 +17,18 @@ public class GameWCC extends  AbstractGame implements IGameWCC{
                 numberOfRounds,
                 fallingOutPolicy);
     }
-    @Override
-    public boolean answerCurrentQuestion(Integer answerIndex, Player.PlayerInfo answeringPlayer) {
-        return false;
-    }
 
     @Override
-    public Integer[] getAvailableCategoriesIndexes() {
+    public CategoryView[] getAvailableCategoriesIndexes() {
         return getQuestionService().getAvailableCategoryIndexes();
     }
 
     @Override
     public QuestionView getNextQuestion(Integer categoryIndex) {
-        return QuestionView.of(getQuestionService().getRandomQuestion(categoryIndex));
+        incrementCurrentRound();
+        Question question = getQuestionService().getRandomQuestion(categoryIndex);
+        setCurrentQuestion(question);
+        return QuestionView.of(question);
     }
 
     @Override

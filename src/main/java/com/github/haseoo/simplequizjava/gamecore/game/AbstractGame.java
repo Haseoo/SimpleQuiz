@@ -1,7 +1,7 @@
 package com.github.haseoo.simplequizjava.gamecore.game;
 
 import com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPolicy;
-import com.github.haseoo.simplequizjava.gamecore.projections.players.Player;
+import com.github.haseoo.simplequizjava.gamecore.projections.players.Player.PlayerInfo;
 import com.github.haseoo.simplequizjava.gamecore.views.QuestionView;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.services.IPlayerService;
@@ -9,6 +9,7 @@ import com.github.haseoo.simplequizjava.gamecore.services.IQuestionService;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import java.util.EnumMap;
 import java.util.Map;
@@ -23,7 +24,7 @@ import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.DEFAUL
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 abstract class AbstractGame implements IGame{
 
-    private static final Map<FallingOutPolicy, BiConsumer<IPlayerService, Player.PlayerInfo>> fallingOutAction;
+    private static final Map<FallingOutPolicy, BiConsumer<IPlayerService, PlayerInfo>> fallingOutAction;
 
     static {
         fallingOutAction = new EnumMap<>(FallingOutPolicy.class);
@@ -35,12 +36,19 @@ abstract class AbstractGame implements IGame{
     private final IPlayerService playerService;
     private final Integer numberOfRounds;
     private final FallingOutPolicy fallingOutPolicy;
+
     private int currentRound;
+    @Setter(AccessLevel.PROTECTED)
     private Question currentQuestion;
 
     @Override
-    public Player.PlayerInfo[] getPlayers() {
-        return playerService.getPlayerList().toArray(new Player.PlayerInfo[0]);
+    public Integer getCurrentRound() {
+        return currentRound;
+    }
+
+    @Override
+    public PlayerInfo[] getPlayers() {
+        return playerService.getPlayerList().toArray(new PlayerInfo[0]);
     }
 
     @Override
@@ -50,21 +58,21 @@ abstract class AbstractGame implements IGame{
 
     @Override
     public QuestionView getNextQuestion() {
-        currentRound++;
+        incrementCurrentRound();
         currentQuestion =  questionService.getRandomQuestion();
         return QuestionView.of(currentQuestion);
     }
 
     @Override
-    public Map<Player.PlayerInfo, Integer> getPlayersScores() {
+    public Map<PlayerInfo, Integer> getPlayersScores() {
         return playerService
                 .getPlayerList()
                 .stream()
-                .collect(Collectors.toMap(playerInfo -> playerInfo, Player.PlayerInfo::getScore));
+                .collect(Collectors.toMap(playerInfo -> playerInfo, PlayerInfo::getScore));
     }
 
     @Override
-    public boolean answerCurrentQuestion(Integer answerIndex, Player.PlayerInfo answeringPlayer) {
+    public boolean answerCurrentQuestion(Integer answerIndex, PlayerInfo answeringPlayer) {
         boolean isCorrectAnswer = checkAnswer(answerIndex);
         if (isCorrectAnswer) {
             getPlayerService().addPointsToPlayerScore(answeringPlayer, DEFAULT_SCORE_INCREMENT_VALUE);
@@ -73,8 +81,21 @@ abstract class AbstractGame implements IGame{
         }
         return isCorrectAnswer;
     }
+    @Override
+    public void markPlayerAsLost(PlayerInfo player) {
+        playerService.setPlayerLost(player);
+    }
 
-    protected boolean checkAnswer(Integer answerIndex) {
+    @Override
+    public QuestionView getCurrentQuestion() {
+        return QuestionView.of(currentQuestion);
+    }
+
+    protected int incrementCurrentRound() {
+        return currentRound++;
+    }
+
+    private boolean checkAnswer(Integer answerIndex) {
         return currentQuestion.getCorrectAnswerIndex().equals(answerIndex);
     }
 

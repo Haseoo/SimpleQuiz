@@ -12,13 +12,13 @@
 
 <VBox fx:id="gameModesVBox" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-    <Label text="Choice your game mode:">
+    <Label text="Choice your game mode">
       <font>
         <Font size="25.0" />
       </font>
     </Label>
     <Separator prefWidth="200.0" visible="false" />
-    <CheckBox fx:id="fallingOutCheckBox" mnemonicParsing="false" text="Players falling out" />
+    <CheckBox fx:id="fallingOutCheckBox" mnemonicParsing="false" text="Players falling out on wrong answer" />
     <Separator prefWidth="200.0" visible="false" />
       <VBox fx:id="gameModeChoiceVBox" alignment="TOP_CENTER">
          <children>

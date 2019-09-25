@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.haseoo.simplequizjava.exceptions.gamecore.questions.ReadingQuestionFromFileException;
 import com.github.haseoo.simplequizjava.gamecore.models.CategoryModel;
 import com.github.haseoo.simplequizjava.gamecore.models.QuestionModel;
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 import java.io.File;
@@ -13,6 +14,7 @@ import java.util.Arrays;
 import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.QUESTION_PATH_FORMATTER;
 
 @Value
+@AllArgsConstructor
 public class Category {
     private String name;
     private Question[] questions;
