@@ -15,7 +15,6 @@ import lombok.RequiredArgsConstructor;
 import java.util.Arrays;
 import java.util.function.IntConsumer;
 
-import static com.github.haseoo.simplequizjava.gui.utilities.Constants.ANSWERS_MARGIN;
 import static com.github.haseoo.simplequizjava.gui.utilities.Constants.DESIRED_NUMBER_OF_CATEGOIRES;
 
 @RequiredArgsConstructor
@@ -58,7 +57,6 @@ public class CategoryController {
         radioButton.setToggleGroup(categoriesToggle);
         radioButton.setUserData(categoryView.getIndex());
         categoryVBox.getChildren().add(radioButton);
-        VBox.setMargin(radioButton, ANSWERS_MARGIN);
     }
 
     private int getDesiredLength(CategoryView[] availableCategories) {

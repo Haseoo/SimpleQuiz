@@ -4,7 +4,7 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.0.7'
 }
 
-version '1.0-SNAPSHOT'
+version '1.0 BETA'
 
 sourceCompatibility = 1.8
 
@@ -12,9 +12,7 @@ repositories {
     mavenCentral()
 }
 
-run {
-    mainClassName = "com.github.haseoo.simplequizjava.gui.GameApp"
-}
+mainClassName = "com.github.haseoo.simplequizjava.Main"
 
 javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
@@ -35,6 +33,16 @@ sourceSets {
     }
 }
 
+def currentOS = org.gradle.internal.os.OperatingSystem.current()
+def platform
+if (currentOS.isWindows()) {
+    platform = 'win'
+} else if (currentOS.isLinux()) {
+    platform = 'linux'
+} else if (currentOS.isMacOsX()) {
+    platform = 'mac'
+}
+
 dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
     compileOnly 'org.projectlombok:lombok:1.18.8'
@@ -44,9 +52,24 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
     testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
     testCompile "org.assertj:assertj-core:3.11.1"
+
+    compile "org.openjfx:javafx-base:11:${platform}"
+    compile "org.openjfx:javafx-graphics:11:${platform}"
+    compile "org.openjfx:javafx-controls:11:${platform}"
+    compile "org.openjfx:javafx-fxml:11:${platform}"
 }
 
 test {
     useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+    doFirst {
+        from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    }
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF'
 }
 

@@ -28,7 +28,7 @@
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin></TextArea>
-          <VBox fx:id="answersVBox" alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="-1.0">
+          <VBox fx:id="answersVBox" alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
