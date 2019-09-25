@@ -45,7 +45,7 @@ public class Game extends Application {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, event.getText());
                 alert.setHeaderText(event.getText());
                 alert.setTitle(event.getText());
-                alert.setGraphic(new ImageView(new Image(new ByteArrayInputStream(Base64.getDecoder().decode(Secret.secret)))));
+                alert.setGraphic(new ImageView(new Image(new ByteArrayInputStream(Base64.getDecoder().decode(Secret.MY_SECRET)))));
                 alert.showAndWait();
             }
         });

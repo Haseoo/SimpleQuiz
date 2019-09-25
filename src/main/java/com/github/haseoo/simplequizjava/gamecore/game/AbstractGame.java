@@ -2,10 +2,10 @@ package com.github.haseoo.simplequizjava.gamecore.game;
 
 import com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPolicy;
 import com.github.haseoo.simplequizjava.gamecore.projections.players.Player.PlayerInfo;
-import com.github.haseoo.simplequizjava.gamecore.views.QuestionView;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.services.IPlayerService;
 import com.github.haseoo.simplequizjava.gamecore.services.IQuestionService;
+import com.github.haseoo.simplequizjava.gamecore.views.QuestionView;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +20,6 @@ import static com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPol
 import static com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPolicy.WITH_PLAYERS_FALLING_OUT;
 import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.DEFAULT_SCORE_INCREMENT_VALUE;
 
-@Getter
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 abstract class AbstractGame implements IGame{
 
@@ -32,6 +31,7 @@ abstract class AbstractGame implements IGame{
         fallingOutAction.put(WITHOUT_PLAYERS_FALLING_OUT, (s, p) -> {});
     }
 
+    @Getter(AccessLevel.PROTECTED)
     private final IQuestionService questionService;
     private final IPlayerService playerService;
     private final Integer numberOfRounds;
@@ -75,9 +75,9 @@ abstract class AbstractGame implements IGame{
     public boolean answerCurrentQuestion(Integer answerIndex, PlayerInfo answeringPlayer) {
         boolean isCorrectAnswer = checkAnswer(answerIndex);
         if (isCorrectAnswer) {
-            getPlayerService().addPointsToPlayerScore(answeringPlayer, DEFAULT_SCORE_INCREMENT_VALUE);
+            playerService.addPointsToPlayerScore(answeringPlayer, DEFAULT_SCORE_INCREMENT_VALUE);
         } else {
-            fallingOutAction.get(fallingOutPolicy).accept(getPlayerService(), answeringPlayer);
+            fallingOutAction.get(fallingOutPolicy).accept(playerService, answeringPlayer);
         }
         return isCorrectAnswer;
     }
