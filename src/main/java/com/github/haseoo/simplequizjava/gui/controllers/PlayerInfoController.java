@@ -31,7 +31,7 @@ public class PlayerInfoController {
     private void onStartGame() throws IOException {
         if(!playerList.getItems().isEmpty()) {
             gameInitializer.setPlayerNicknames(playerList.getItems());
-            log.info(gameInitializer.toString());
+            log.debug(gameInitializer.toString());
             FXMLLoader gamePlayWindow = new FXMLLoader(getResourceURL(GAME_PLAY_WINDOW_FXML_PATH));
             initController(gamePlayWindow);
             scrollPane.setContent(gamePlayWindow.load());
@@ -59,10 +59,10 @@ public class PlayerInfoController {
     private void initController(FXMLLoader gamePlayWindow) {
         switch (gameInitializer.getGameMode()) {
             case WITHOUT_CHOOSING_CATEGORY:
-                gamePlayWindow.setController(new GamePlayControllerWOCC(playerResignMenuItem, gameInitializer, scrollPane));
+                gamePlayWindow.setController(new GamePlayControllerWOCC(gameInitializer, playerResignMenuItem, scrollPane));
                 break;
             case WITH_CHOOSING_CATEGORY:
-                gamePlayWindow.setController(new GamePlayControllerWCC(playerResignMenuItem, gameInitializer, scrollPane));
+                gamePlayWindow.setController(new GamePlayControllerWCC(gameInitializer, playerResignMenuItem, scrollPane));
                 break;
             default:
                 throw new UnsupportedGameMode();

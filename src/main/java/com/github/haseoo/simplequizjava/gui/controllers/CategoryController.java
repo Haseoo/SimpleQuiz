@@ -4,6 +4,7 @@ import com.github.haseoo.simplequizjava.gamecore.game.IGameWCC;
 import com.github.haseoo.simplequizjava.gamecore.projections.players.Player.PlayerInfo;
 import com.github.haseoo.simplequizjava.gamecore.views.CategoryView;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
@@ -27,6 +28,8 @@ public class CategoryController {
     private Text choosingPlayerNickname;
     @FXML
     private VBox categoryVBox;
+    @FXML
+    private Button applyButton;
 
     private ToggleGroup categoriesToggle;
 
@@ -42,8 +45,11 @@ public class CategoryController {
     @FXML
     private void onApply() {
         Toggle toggle = categoriesToggle.getSelectedToggle();
-        Integer selectedCategoryIndex = (Integer)toggle.getUserData();
-        onChosenCategoryAction.accept(selectedCategoryIndex);
+        if (toggle != null) {
+            Integer selectedCategoryIndex = (Integer) toggle.getUserData();
+            onChosenCategoryAction.accept(selectedCategoryIndex);
+            applyButton.setDisable(true);
+        }
     }
 
     private void setupRadioButton(CategoryView categoryView) {
