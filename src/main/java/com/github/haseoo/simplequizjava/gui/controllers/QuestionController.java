@@ -77,6 +77,5 @@ public class QuestionController {
         radioButton.setToggleGroup(answerToggleGroup);
         radioButton.setUserData(index);
         answersVBox.getChildren().add(radioButton);
-        VBox.setMargin(radioButton, ANSWERS_MARGIN);
     }
 }
