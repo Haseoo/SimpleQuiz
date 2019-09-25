@@ -36,7 +36,7 @@ public class GameInitializer {
     }
 
     public GameWOCC buildGameWOCC() {
-        if (!checkRequiredFields()) {
+        if (checkRequiredFields()) {
             throw new GameInitializerException();
         }
         return new GameWOCC(questionService,

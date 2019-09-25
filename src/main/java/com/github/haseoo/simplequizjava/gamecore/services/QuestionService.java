@@ -1,10 +1,11 @@
 package com.github.haseoo.simplequizjava.gamecore.services;
 
-import com.github.haseoo.simplequizjava.gamecore.repositories.IQuestionRepository;
-import com.github.haseoo.simplequizjava.gamecore.utility.Constants;
 import com.github.haseoo.simplequizjava.exceptions.gamecore.questions.UnableToDrawQuestionException;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionCoords;
+import com.github.haseoo.simplequizjava.gamecore.repositories.IQuestionRepository;
+import com.github.haseoo.simplequizjava.gamecore.utility.Constants;
+import com.github.haseoo.simplequizjava.gamecore.views.CategoryView;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -50,10 +51,13 @@ public class QuestionService implements IQuestionService{
     }
 
     @Override
-    public Integer[] getAvailableCategoryIndexes() {
+    public CategoryView[] getAvailableCategoryIndexes() {
         Map<Integer, Long> map = availableQuestions.stream()
                 .collect(groupingBy(QuestionCoords::getCategoryIndex, Collectors.counting()));
-        return getShuffledCategoryIndexes(map);
+        Integer[] getShuffledCategoryIndexes = getShuffledCategoryIndexes(map);
+        return Arrays.stream(getShuffledCategoryIndexes)
+                .map(this::getCategoryView)
+                .toArray(CategoryView[]::new);
     }
 
     private Integer[] getShuffledCategoryIndexes(Map<Integer, Long> map) {
@@ -82,5 +86,10 @@ public class QuestionService implements IQuestionService{
     private void generateCoordsForCategory(Integer categoryIndex){
         IntStream.range(Constants.BEGIN_INDEX, questionRepository.getNumberOfQuestionInCategory(categoryIndex))
         .forEach(questionIndex -> availableQuestions.add(new QuestionCoords(categoryIndex, questionIndex)));
+    }
+
+    private CategoryView getCategoryView(Integer categoryIndex) {
+        return new CategoryView(categoryIndex,
+                                questionRepository.getCategoryByIndex(categoryIndex).getName());
     }
 }

@@ -1,5 +1,6 @@
 package com.github.haseoo.simplequizjava.gamecore.repositories;
 
+import com.github.haseoo.simplequizjava.gamecore.projections.questions.Category;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.Question;
 import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionCoords;
 
@@ -8,4 +9,5 @@ public interface IQuestionRepository {
     Integer getNumberOfCategories();
     Integer getNumberOfQuestionInCategory(Integer categoryIndex);
     Integer getTotalNumberOfQuestions();
+    Category getCategoryByIndex(Integer index);
 }

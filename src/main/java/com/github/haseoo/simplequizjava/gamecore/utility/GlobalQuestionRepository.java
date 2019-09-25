@@ -56,6 +56,10 @@ public class GlobalQuestionRepository {
         return categories[categoryIndex].getQuestions().length;
     }
 
+    public static Category getCategoryByIndex(Integer index) {
+        return categories[index];
+    }
+
     public static void clearRepository() {
         categories = null;
     }

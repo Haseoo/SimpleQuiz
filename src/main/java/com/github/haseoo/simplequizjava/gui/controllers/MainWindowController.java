@@ -30,8 +30,8 @@ public class MainWindowController {
 
     static {
         questionRepositoryStatusNodes = new HashMap<>();
-        questionRepositoryStatusNodes.put(true, getResourceURL(MainWindowController.class, QUESTION_LOADED_FXML_PATH));
-        questionRepositoryStatusNodes.put(false, getResourceURL(MainWindowController.class, QUESTION_NOT_LOADED_FXML_PATH));
+        questionRepositoryStatusNodes.put(true, getResourceURL(QUESTION_LOADED_FXML_PATH));
+        questionRepositoryStatusNodes.put(false, getResourceURL(QUESTION_NOT_LOADED_FXML_PATH));
     }
 
     private final Application application;
@@ -42,19 +42,22 @@ public class MainWindowController {
     private BorderPane borderPane;
     @FXML
     private MenuItem loadRepository;
+    @FXML
+    private MenuItem playerResignMenuItem;
 
     @FXML
     private void initialize() throws IOException {
-        FXMLLoader newGame = new FXMLLoader(getResourceURL(getClass(), GAME_MODES_FXML_PATH));
-        newGame.setController(new GameModesController(new QuestionRepository(), scrollPane, loadRepository));
+        FXMLLoader newGame = new FXMLLoader(getResourceURL(GAME_MODES_FXML_PATH));
+        newGame.setController(new GameModesController(new QuestionRepository(), scrollPane, loadRepository, playerResignMenuItem));
         scrollPane.setContent(newGame.load());
         loadRepository.setDisable(false);
+        playerResignMenuItem.setDisable(true);
         setRepositoryStatus();
     }
 
     @FXML
     private void onAbout() throws IOException {
-        FXMLLoader onAbout = new FXMLLoader(getResourceURL(getClass(), ON_ABOUT_FXML_PATH));
+        FXMLLoader onAbout = new FXMLLoader(getResourceURL(ON_ABOUT_FXML_PATH));
         onAbout.setController(new OnAboutController(application));
         Parent root = onAbout.load();
         prepareDialog(root, ON_ABOUT_TITLE);
@@ -67,7 +70,7 @@ public class MainWindowController {
 
     @FXML
     private void onLoadRepository() throws IOException {
-        Parent root = FXMLLoader.load(getResourceURL(getClass(), REPOSITORY_INITIALIZATION_DIALOG_FXML_PATH));
+        Parent root = FXMLLoader.load(getResourceURL(REPOSITORY_INITIALIZATION_DIALOG_FXML_PATH));
         prepareDialog(root, LOAD_REPOSITORY_TITLE);
         initialize();
     }

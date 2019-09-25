@@ -44,6 +44,6 @@
          <VBox.margin>
             <Insets top="15.0" />
          </VBox.margin></Separator>
-      <Button fx:id="startButton" mnemonicParsing="false" onAction="#onStartGame" text="Start game" />
+      <Button fx:id="startButton" defaultButton="true" mnemonicParsing="false" onAction="#onStartGame" text="Start game" />
   </children>
 </VBox>

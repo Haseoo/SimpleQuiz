@@ -1,5 +1,6 @@
 package com.github.haseoo.simplequizjava.gui.utilities;
 
+import com.github.haseoo.simplequizjava.gui.GameApp;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
@@ -8,8 +9,8 @@ import java.util.Objects;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Utilities {
-    public static URL getResourceURL(Class<?> clazz, String relativePath) {
-        return Objects.requireNonNull(clazz.getClassLoader().getResource(relativePath));
+    public static URL getResourceURL(String relativePath) {
+        return Objects.requireNonNull(GameApp.class.getClassLoader().getResource(relativePath));
     }
 
     public static String getErrorMessage(Throwable throwable) {

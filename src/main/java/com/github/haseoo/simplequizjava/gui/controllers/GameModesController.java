@@ -36,6 +36,7 @@ public class GameModesController {
     private final IQuestionRepository questionRepository;
     private final ScrollPane scrollPane;
     private final MenuItem initRepositoryMenuItem;
+    private final MenuItem playerResignMenuItem;
 
     private NumberOfQuestionsComponent numberOfQuestionsComponent;
 
@@ -50,8 +51,8 @@ public class GameModesController {
     @FXML
     private void onNext() throws IOException {
         initRepositoryMenuItem.setDisable(true);
-        FXMLLoader playerInfo = new FXMLLoader(getResourceURL(getClass(), PLAYER_INFO_FXML_PATH));
-        playerInfo.setController(new PlayerInfoController(getGameInitializer()));
+        FXMLLoader playerInfo = new FXMLLoader(getResourceURL(PLAYER_INFO_FXML_PATH));
+        playerInfo.setController(new PlayerInfoController(scrollPane, playerResignMenuItem, getGameInitializer()));
         scrollPane.setContent(playerInfo.load());
     }
 
