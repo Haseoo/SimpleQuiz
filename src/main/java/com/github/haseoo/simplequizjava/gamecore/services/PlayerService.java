@@ -6,7 +6,6 @@ import com.github.haseoo.simplequizjava.gamecore.projections.players.Player;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
-import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.ALL_PLAYER_LOST_INITIAL_VALUE;
 
 public class PlayerService implements IPlayerService{
     private List<Player> players;
@@ -28,7 +27,7 @@ public class PlayerService implements IPlayerService{
 
     @Override
     public boolean isAllPlayerLost() {
-        return !players.stream().map(Player::isPlaying).reduce(ALL_PLAYER_LOST_INITIAL_VALUE, (r, a) -> r || a);
+        return players.stream().noneMatch(Player::isPlaying);
     }
 
     @Override
