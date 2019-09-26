@@ -48,6 +48,7 @@ public class GameModesController {
         }
         gameModeChoiceBox.setDisable(!GlobalQuestionRepository.isInitialized());
     }
+
     @FXML
     private void onNext() throws IOException {
         initRepositoryMenuItem.setDisable(true);
@@ -80,8 +81,8 @@ public class GameModesController {
         gameInitializer.setNumberOfQuestion(numberOfQuestion);
         gameInitializer.setQuestionService(new QuestionService(questionRepository));
         gameInitializer.setFallingOutPolicy((fallingOutCheckBox.isSelected()
-                                                ? WITH_PLAYERS_FALLING_OUT
-                                                : WITHOUT_PLAYERS_FALLING_OUT));
+                ? WITH_PLAYERS_FALLING_OUT
+                : WITHOUT_PLAYERS_FALLING_OUT));
         return gameInitializer;
     }
 }

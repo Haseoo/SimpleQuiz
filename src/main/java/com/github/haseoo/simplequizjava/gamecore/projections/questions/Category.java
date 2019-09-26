@@ -19,7 +19,7 @@ public class Category {
     private String name;
     private Question[] questions;
 
-    public Category (String categoryListFilePath ,CategoryModel categoryModel) {
+    public Category(String categoryListFilePath, CategoryModel categoryModel) {
         ObjectMapper objectMapper = new ObjectMapper();
         name = categoryModel.getName();
         QuestionModel[] questionModels;

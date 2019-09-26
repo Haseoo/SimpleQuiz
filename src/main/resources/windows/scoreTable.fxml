@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
-<VBox alignment="CENTER" fillWidth="false" prefHeight="-1.0" prefWidth="-1.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
-  <children>
-    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Score Table">
-      <font>
-        <Font size="25.0" />
-      </font>
-    </Text>
-      <TableView fx:id="scoreTable" prefHeight="300.0">
-        <columns>
-          <TableColumn editable="false" minWidth="-1.0" prefWidth="200.0" sortable="false" text="Nickname">
-            <cellValueFactory>
-              <PropertyValueFactory property="nickname" />
-            </cellValueFactory>
-          </TableColumn>
-          <TableColumn editable="false" minWidth="-1.0" prefWidth="100.0" resizable="false" text="Score">
-            <cellValueFactory>
-              <PropertyValueFactory property="score" />
-            </cellValueFactory>
-          </TableColumn>
-        </columns>
-      </TableView>
-  </children>
+<VBox alignment="CENTER" fillWidth="false" prefHeight="-1.0" prefWidth="-1.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Score Table">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+        <TableView fx:id="scoreTable" prefHeight="300.0">
+            <columns>
+                <TableColumn editable="false" minWidth="-1.0" prefWidth="200.0" sortable="false" text="Nickname">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nickname"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn editable="false" minWidth="-1.0" prefWidth="100.0" resizable="false" text="Score">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="score"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </children>
 </VBox>

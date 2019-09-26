@@ -6,7 +6,7 @@ import com.github.haseoo.simplequizjava.gamecore.services.IQuestionService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class GameWOCC extends AbstractGame{
+public class GameWOCC extends AbstractGame {
     public GameWOCC(IQuestionService questionService,
                     IPlayerService playerService,
                     FallingOutPolicy fallingOutPolicy,

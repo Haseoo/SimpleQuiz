@@ -1,6 +1,6 @@
 package com.github.haseoo.simplequizjava.gui.projections;
 
-import lombok.*;
+import lombok.Value;
 
 @Value
 public class TableRecord {

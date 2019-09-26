@@ -60,14 +60,14 @@ public class QuestionController {
         String[] answers = question.getAnswers();
         answerToggleGroup = new ToggleGroup();
         IntStream.range(BEGIN_INDEX, answers.length)
-                 .forEach(index -> setupRadioButton(answers[index], index));
+                .forEach(index -> setupRadioButton(answers[index], index));
     }
 
     @FXML
     private void onApplyAnswer() {
         applyButton.setDisable(true);
         Toggle toggle = answerToggleGroup.getSelectedToggle();
-        Integer answerIndex = ((toggle != null) ? (Integer)toggle.getUserData() : null);
+        Integer answerIndex = ((toggle != null) ? (Integer) toggle.getUserData() : null);
         resultPane.getChildren().add(resultPaneContent.get((onAnswer.apply(player, answerIndex))));
     }
 

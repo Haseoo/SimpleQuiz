@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-
-<BorderPane fx:id="borderPane" prefHeight="-1.0" prefWidth="-1.0" snapToPixel="true" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
-  <top>
-    <VBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" visible="true">
-      <children>
-        <MenuBar focusTraversable="true" useSystemMenuBar="true">
-          <menus>
-            <Menu mnemonicParsing="false" text="Game">
-              <items>
-                <MenuItem mnemonicParsing="false" onAction="#initialize" text="New Game" />
-                        <MenuItem fx:id="loadRepository" mnemonicParsing="false" onAction="#onLoadRepository" text="Load repository" />
-                <MenuItem mnemonicParsing="false" onAction="#onExit" text="Quit" />
-              </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Player">
-              <items>
-                <MenuItem fx:id="playerResignMenuItem" disable="true" mnemonicParsing="false" text="Resign" />
-              </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Help">
-              <items>
-                <MenuItem mnemonicParsing="false" onAction="#onAbout" text="About" />
-              </items>
-            </Menu>
-          </menus>
-        </MenuBar>
-        <ImageView fx:id="test" fitHeight="0.0" fitWidth="600.0" pickOnBounds="true" x="0.0" y="0.0">
-          <image>
-            <Image url="@logo.png" />
-          </image>
-        </ImageView>
-      </children>
-    </VBox>
-  </top>
-   <center>
-      <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="300.0" BorderPane.alignment="TOP_CENTER">
-         <BorderPane.margin>
-            <Insets />
-         </BorderPane.margin></ScrollPane>
-   </center>
-   <opaqueInsets>
-      <Insets />
-   </opaqueInsets>
+<BorderPane fx:id="borderPane" prefHeight="-1.0" prefWidth="-1.0" snapToPixel="true"
+            xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <VBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" visible="true">
+            <children>
+                <MenuBar focusTraversable="true" useSystemMenuBar="true">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Game">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#initialize" text="New Game"/>
+                                <MenuItem fx:id="loadRepository" mnemonicParsing="false" onAction="#onLoadRepository"
+                                          text="Load repository"/>
+                                <MenuItem mnemonicParsing="false" onAction="#onExit" text="Quit"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Player">
+                            <items>
+                                <MenuItem fx:id="playerResignMenuItem" disable="true" mnemonicParsing="false"
+                                          text="Resign"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#onAbout" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ImageView fx:id="test" fitHeight="0.0" fitWidth="600.0" pickOnBounds="true" x="0.0" y="0.0">
+                    <image>
+                        <Image url="@logo.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="300.0" BorderPane.alignment="TOP_CENTER">
+            <BorderPane.margin>
+                <Insets/>
+            </BorderPane.margin>
+        </ScrollPane>
+    </center>
+    <opaqueInsets>
+        <Insets/>
+    </opaqueInsets>
 </BorderPane>

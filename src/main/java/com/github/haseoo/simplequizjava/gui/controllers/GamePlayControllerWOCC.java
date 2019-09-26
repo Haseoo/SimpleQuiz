@@ -6,16 +6,17 @@ import javafx.scene.control.ScrollPane;
 
 import java.io.IOException;
 
-public class GamePlayControllerWOCC extends AbstractGamePlayController{
+public class GamePlayControllerWOCC extends AbstractGamePlayController {
 
     public GamePlayControllerWOCC(GameInitializer gameInitializer,
                                   MenuItem playerResignMenuItem,
                                   ScrollPane scrollPane) {
         super(playerResignMenuItem, scrollPane, gameInitializer.buildGameWOCC());
     }
+
     @Override
     protected void nextAction() throws IOException {
-        if (getAnswerPlayerList().willIterationOccur()){
+        if (getAnswerPlayerList().willIterationOccur()) {
             if (getGame().isGameEnded()) {
                 printResults();
                 return;

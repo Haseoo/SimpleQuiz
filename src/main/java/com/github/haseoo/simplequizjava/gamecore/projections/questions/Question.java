@@ -11,8 +11,8 @@ public class Question {
 
     public static Question of(QuestionModel questionModel) {
         return new Question(questionModel.getContent(),
-                            questionModel.getAnswers(),
-                            questionModel.getCorrectAnswerIndex()
+                questionModel.getAnswers(),
+                questionModel.getCorrectAnswerIndex()
         );
     }
 }

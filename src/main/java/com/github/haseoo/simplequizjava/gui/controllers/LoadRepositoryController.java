@@ -21,7 +21,7 @@ public class LoadRepositoryController {
     @FXML
     private void onBrowse() {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(FILE_FILTER_DESCRIPTION,FILE_FILTER_EXTENSION));
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(FILE_FILTER_DESCRIPTION, FILE_FILTER_EXTENSION));
         File categoryListFile = fileChooser.showOpenDialog(filePathField.getScene().getWindow());
         if (categoryListFile != null) {
             filePathField.setText(categoryListFile.getAbsolutePath());
@@ -54,7 +54,7 @@ public class LoadRepositoryController {
     }
 
     private void closeWindow() {
-        ((Stage)filePathField.getScene().getWindow()).close();
+        ((Stage) filePathField.getScene().getWindow()).close();
     }
 
 }

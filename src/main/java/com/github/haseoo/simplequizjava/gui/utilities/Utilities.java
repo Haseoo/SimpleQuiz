@@ -17,7 +17,7 @@ public class Utilities {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(throwable.getMessage());
         Throwable cause = throwable.getCause();
-        while(cause != null) {
+        while (cause != null) {
             stringBuilder.append(System.lineSeparator());
             stringBuilder.append(cause.getMessage());
             cause = cause.getCause();

@@ -13,6 +13,7 @@ public class PlayerList {
         this.players = Arrays.asList(players);
         currentPlayer = null;
     }
+
     private final List<PlayerInfo> players;
     @Getter
     private PlayerInfo currentPlayer;

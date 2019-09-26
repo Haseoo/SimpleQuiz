@@ -13,7 +13,7 @@ import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.BEGIN_
 import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.CATEGORIES_LIST_INITIALIZATION_DEFAULT_POLICY;
 
 @NoArgsConstructor
-public class QuestionRepository implements IQuestionRepository{
+public class QuestionRepository implements IQuestionRepository {
     public QuestionRepository(String categoryListFilePath) throws RepositoryInitalizationException {
         GlobalQuestionRepository.initRepository(categoryListFilePath,
                 CATEGORIES_LIST_INITIALIZATION_DEFAULT_POLICY);

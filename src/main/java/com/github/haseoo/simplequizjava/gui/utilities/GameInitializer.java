@@ -30,9 +30,9 @@ public class GameInitializer {
             throw new GameInitializerException();
         }
         return new GameWCC(questionService,
-                            new PlayerService(playerNicknames),
-                            fallingOutPolicy,
-                            numberOfQuestion);
+                new PlayerService(playerNicknames),
+                fallingOutPolicy,
+                numberOfQuestion);
     }
 
     public GameWOCC buildGameWOCC() {

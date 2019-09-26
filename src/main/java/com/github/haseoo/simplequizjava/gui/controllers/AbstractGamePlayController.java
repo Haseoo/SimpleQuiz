@@ -23,7 +23,7 @@ import static com.github.haseoo.simplequizjava.gui.utilities.Constants.SCORE_TAB
 import static com.github.haseoo.simplequizjava.gui.utilities.Utilities.getResourceURL;
 
 @Getter(AccessLevel.PROTECTED)
-abstract public class AbstractGamePlayController {
+public abstract class AbstractGamePlayController {
     private final MenuItem playerResignMenuItem;
     private final ScrollPane scrollPane;
     private final IGame game;
@@ -56,7 +56,7 @@ abstract public class AbstractGamePlayController {
     }
 
     @FXML
-    protected void onNext() throws IOException{
+    protected void onNext() throws IOException {
         nextButton.setDisable(true);
         removeQuestionPane();
         nextAction();

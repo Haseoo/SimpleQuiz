@@ -59,14 +59,14 @@ public class GamePlayControllerWCC extends AbstractGamePlayController {
         getPlayerResignMenuItem().setDisable(true);
         getNextButton().setDisable(true);
         categoryPlayerList.setNext();
-        IntConsumer onCategoryApply = (categoryIndex) -> {
+        IntConsumer onCategoryApply = categoryIndex -> {
             game.getNextQuestion(categoryIndex);
             getNextButton().setDisable(false);
         };
         FXMLLoader categoryChoose = new FXMLLoader(getResourceURL(CATEGORY_WINDOW_FXML_PATH));
         categoryChoose.setController(new CategoryController(game,
-                                                            onCategoryApply,
-                                                            categoryPlayerList.getCurrentPlayer()));
+                onCategoryApply,
+                categoryPlayerList.getCurrentPlayer()));
         choosingCategoryPane = categoryChoose.load();
         getRoundNumber().setText(Integer.toString(calculateRoundNumber()));
         addCategoryPane();
