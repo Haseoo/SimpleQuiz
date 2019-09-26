@@ -20,20 +20,22 @@ import java.util.Arrays;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class GlobalQuestionRepository {
     private static Category[] categories;
+
     public static void initRepository(String categoriesListFilePath, boolean doReinitialization) throws RepositoryInitalizationException {
         if (categories == null || doReinitialization) {
             ObjectMapper objectMapper = new ObjectMapper();
             try {
                 CategoryModel[] categoryModels = objectMapper.readValue(new File(categoriesListFilePath), CategoryModel[].class);
                 categories = Arrays
-                            .stream(categoryModels)
-                            .map(categoryModel -> new Category(categoriesListFilePath, categoryModel))
-                            .toArray(Category[]::new);
+                        .stream(categoryModels)
+                        .map(categoryModel -> new Category(categoriesListFilePath, categoryModel))
+                        .toArray(Category[]::new);
             } catch (IOException | ReadingQuestionFromFileException e) {
                 throw new RepositoryInitalizationException(e);
             }
         }
     }
+
     public static Question getQuestionByCoords(QuestionCoords questionCoords) {
         if (categories == null) {
             throw new UninitializedRepository();

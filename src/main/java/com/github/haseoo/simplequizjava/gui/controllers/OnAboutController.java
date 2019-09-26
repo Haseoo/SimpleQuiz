@@ -15,6 +15,7 @@ public class OnAboutController {
     void onProjectLink() {
         application.getHostServices().showDocument(GITHUB_PROJECT_LINK);
     }
+
     @FXML
     void onFontLink() {
         application.getHostServices().showDocument(FONT_CREDIT_LINK);

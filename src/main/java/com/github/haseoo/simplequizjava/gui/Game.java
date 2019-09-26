@@ -18,6 +18,7 @@ import java.util.Base64;
 
 import static com.github.haseoo.simplequizjava.gui.utilities.Constants.*;
 import static com.github.haseoo.simplequizjava.gui.utilities.Utilities.getResourceURL;
+
 public class Game extends Application {
 
     @Override

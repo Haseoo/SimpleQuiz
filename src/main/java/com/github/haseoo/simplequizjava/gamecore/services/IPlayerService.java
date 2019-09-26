@@ -6,7 +6,10 @@ import java.util.List;
 
 public interface IPlayerService {
     List<Player.PlayerInfo> getPlayerList();
+
     boolean isAllPlayerLost();
+
     void setPlayerLost(Player.PlayerInfo player);
+
     void addPointsToPlayerScore(Player.PlayerInfo playerInfo, Integer score);
 }

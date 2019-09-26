@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.groupingBy;
 
-public class QuestionService implements IQuestionService{
+public class QuestionService implements IQuestionService {
     private List<QuestionCoords> availableQuestions;
     private final IQuestionRepository questionRepository;
     private Random random;
@@ -33,7 +33,7 @@ public class QuestionService implements IQuestionService{
 
     @Override
     public Question getRandomQuestion() {
-        if(availableQuestions.isEmpty()) {
+        if (availableQuestions.isEmpty()) {
             throw new UnableToDrawQuestionException();
         }
         int index = random.nextInt(availableQuestions.size());
@@ -43,7 +43,7 @@ public class QuestionService implements IQuestionService{
     @Override
     public Question getRandomQuestion(Integer categoryIndex) {
         List<QuestionCoords> availableQuestionsWithCategory = getQuestionCoordsWithGivenCategory(categoryIndex);
-        if(availableQuestionsWithCategory.isEmpty()) {
+        if (availableQuestionsWithCategory.isEmpty()) {
             throw new UnableToDrawQuestionException();
         }
         int index = random.nextInt(availableQuestionsWithCategory.size());
@@ -78,18 +78,18 @@ public class QuestionService implements IQuestionService{
 
     private List<QuestionCoords> getQuestionCoordsWithGivenCategory(Integer categoryIndex) {
         return availableQuestions
-                    .stream()
-                    .filter(categoryCoords -> categoryCoords.getCategoryIndex().equals(categoryIndex))
-                    .collect(Collectors.toList());
+                .stream()
+                .filter(categoryCoords -> categoryCoords.getCategoryIndex().equals(categoryIndex))
+                .collect(Collectors.toList());
     }
 
-    private void generateCoordsForCategory(Integer categoryIndex){
+    private void generateCoordsForCategory(Integer categoryIndex) {
         IntStream.range(Constants.BEGIN_INDEX, questionRepository.getNumberOfQuestionInCategory(categoryIndex))
-        .forEach(questionIndex -> availableQuestions.add(new QuestionCoords(categoryIndex, questionIndex)));
+                .forEach(questionIndex -> availableQuestions.add(new QuestionCoords(categoryIndex, questionIndex)));
     }
 
     private CategoryView getCategoryView(Integer categoryIndex) {
         return new CategoryView(categoryIndex,
-                                questionRepository.getCategoryByIndex(categoryIndex).getName());
+                questionRepository.getCategoryByIndex(categoryIndex).getName());
     }
 }

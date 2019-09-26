@@ -21,14 +21,15 @@ import static com.github.haseoo.simplequizjava.gamecore.game.enums.FallingOutPol
 import static com.github.haseoo.simplequizjava.gamecore.utility.Constants.DEFAULT_SCORE_INCREMENT_VALUE;
 
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
-abstract class AbstractGame implements IGame{
+abstract class AbstractGame implements IGame {
 
     private static final Map<FallingOutPolicy, BiConsumer<IPlayerService, PlayerInfo>> fallingOutAction;
 
     static {
         fallingOutAction = new EnumMap<>(FallingOutPolicy.class);
         fallingOutAction.put(WITH_PLAYERS_FALLING_OUT, (IPlayerService::setPlayerLost));
-        fallingOutAction.put(WITHOUT_PLAYERS_FALLING_OUT, (s, p) -> {});
+        fallingOutAction.put(WITHOUT_PLAYERS_FALLING_OUT, (s, p) -> {
+        });
     }
 
     @Getter(AccessLevel.PROTECTED)
@@ -59,7 +60,7 @@ abstract class AbstractGame implements IGame{
     @Override
     public QuestionView getNextQuestion() {
         incrementCurrentRound();
-        currentQuestion =  questionService.getRandomQuestion();
+        currentQuestion = questionService.getRandomQuestion();
         return QuestionView.of(currentQuestion);
     }
 
@@ -81,6 +82,7 @@ abstract class AbstractGame implements IGame{
         }
         return isCorrectAnswer;
     }
+
     @Override
     public void markPlayerAsLost(PlayerInfo player) {
         playerService.setPlayerLost(player);

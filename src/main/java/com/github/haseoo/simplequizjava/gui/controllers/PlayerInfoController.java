@@ -29,7 +29,7 @@ public class PlayerInfoController {
 
     @FXML
     private void onStartGame() throws IOException {
-        if(!playerList.getItems().isEmpty()) {
+        if (!playerList.getItems().isEmpty()) {
             gameInitializer.setPlayerNicknames(playerList.getItems());
             log.debug(gameInitializer.toString());
             FXMLLoader gamePlayWindow = new FXMLLoader(getResourceURL(GAME_PLAY_WINDOW_FXML_PATH));

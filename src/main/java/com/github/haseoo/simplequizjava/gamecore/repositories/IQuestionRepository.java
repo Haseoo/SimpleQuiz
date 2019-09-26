@@ -6,8 +6,12 @@ import com.github.haseoo.simplequizjava.gamecore.projections.questions.QuestionC
 
 public interface IQuestionRepository {
     Question getQuestionByCoords(QuestionCoords questionCoords);
+
     Integer getNumberOfCategories();
+
     Integer getNumberOfQuestionInCategory(Integer categoryIndex);
+
     Integer getTotalNumberOfQuestions();
+
     Category getCategoryByIndex(Integer index);
 }

@@ -6,21 +6,21 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-
-<HBox alignment="CENTER" prefWidth="-1.0" style="-fx-background-color :#bdffc0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
-  <children>
-    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@okSign.png" />
-      </image>
-    </ImageView>
-    <Label text="Your answer is correct!" textFill="#319900" underline="false" wrapText="false">
-      <font>
-        <Font size="25.0" />
-      </font>
-      <HBox.margin>
-        <Insets left="10.0" />
-      </HBox.margin>
-    </Label>
-  </children>
+<HBox alignment="CENTER" prefWidth="-1.0" style="-fx-background-color :#bdffc0;"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@okSign.png"/>
+            </image>
+        </ImageView>
+        <Label text="Your answer is correct!" textFill="#319900" underline="false" wrapText="false">
+            <font>
+                <Font size="25.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="10.0"/>
+            </HBox.margin>
+        </Label>
+    </children>
 </HBox>

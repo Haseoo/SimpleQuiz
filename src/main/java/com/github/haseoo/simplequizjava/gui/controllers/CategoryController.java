@@ -36,7 +36,7 @@ public class CategoryController {
     void initialize() {
         categoriesToggle = new ToggleGroup();
         choosingPlayerNickname.setText(choosingPlayer.getName());
-        CategoryView[] availableCategories =  game.getAvailableCategoriesIndexes();
+        CategoryView[] availableCategories = game.getAvailableCategoriesIndexes();
         CategoryView[] categories = Arrays.copyOf(availableCategories, getDesiredLength(availableCategories));
         Arrays.stream(categories).forEach(this::setupRadioButton);
     }
@@ -61,7 +61,7 @@ public class CategoryController {
 
     private int getDesiredLength(CategoryView[] availableCategories) {
         return (availableCategories.length > DESIRED_NUMBER_OF_CATEGOIRES)
-                    ? DESIRED_NUMBER_OF_CATEGOIRES
-                    : availableCategories.length;
+                ? DESIRED_NUMBER_OF_CATEGOIRES
+                : availableCategories.length;
     }
 }

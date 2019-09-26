@@ -20,7 +20,7 @@ public class Constants {
     public static final String ERROR_DIALOG_CONTEXT_TEXT = "Read readme.txt for information about proper file format.";
     public static final String FILE_FILTER_DESCRIPTION = "Json file";
     public static final String FILE_FILTER_EXTENSION = "*.json";
-    public static final Insets ANSWERS_MARGIN = new Insets(5,0,5,0);
+    public static final Insets ANSWERS_MARGIN = new Insets(5, 0, 5, 0);
     public static final Integer DESIRED_NUMBER_OF_CATEGOIRES = 3;
 
     /*FXML RESOURCES*/
@@ -34,7 +34,7 @@ public class Constants {
     public static final String GAME_PLAY_WINDOW_FXML_PATH = "gamePlayWindow.fxml";
     public static final String GOOD_ANSWER_PANE_FXML_PATH = "goodAnswer.fxml";
     public static final String BAD_ANSWER_PANE_FXML_PATH = "badAnswer.fxml";
-    public static final String QUESTION_PANE_FXML_PATH  = "questionWindow.fxml";
+    public static final String QUESTION_PANE_FXML_PATH = "questionWindow.fxml";
     public static final String SCORE_TABLE_FXML_PATH = "scoreTable.fxml";
     public static final String CATEGORY_WINDOW_FXML_PATH = "categoryWindow.fxml";
 }

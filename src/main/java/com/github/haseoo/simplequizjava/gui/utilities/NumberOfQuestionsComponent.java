@@ -14,12 +14,13 @@ import static com.github.haseoo.simplequizjava.gui.utilities.Constants.SPINNER_I
 public class NumberOfQuestionsComponent {
     private final HBox component;
     private final Spinner<Integer> spinner;
+
     public NumberOfQuestionsComponent(Integer maxNumberOfQuestions) {
         component = new HBox();
         spinner = new Spinner<>();
         spinner.setValueFactory(new IntegerSpinnerValueFactory(SPINNER_INITIAL_VALUE, maxNumberOfQuestions));
         component.setAlignment(Pos.CENTER);
         component.getChildren().addAll(new Label(NUMBER_OF_QUESTIONS_COMPONENT_LABEL_TEXT),
-                                       spinner);
+                spinner);
     }
 }
