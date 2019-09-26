@@ -51,4 +51,4 @@ The .json file with questions structure is:
 ```
 
 ## The future
-I planned to make an online client-server version of this game using only Java but I gave up this idea. Now I'm planning to make the web version of this game (yeah, yet another version) in Java EE. Simply because to learn this platform.
+I planned to make an online client-server version of this game using only Java but I gave up this idea. Now I'm planning to make the web version of this game (yeah, yet another version) in Java EE. Simply to learn this platform.
