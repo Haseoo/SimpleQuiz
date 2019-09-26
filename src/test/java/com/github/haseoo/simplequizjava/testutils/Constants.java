@@ -12,6 +12,7 @@ public class Constants {
     public static final String FIRST_TEST_QUESTION_ANSWER2 = "answer2";
     public static final String FIRST_TEST_QUESTION_ANSWER3 = "answer3";
     public static final Integer FIRST_TEST_QUESTION_CORRECT_ANSWER = 0;
+    public static final Integer FIRST_TEST_QUESTION_INCORRECT_ANSWER = 1;
     public static final Integer NUMBER_OF_TEST_CATEGORIES = 3;
     public static final Integer NUMBER_OF_TEST_QUESTION = 1;
     public static final Integer TEST_CATEGORY_INDEX = 0;
@@ -19,4 +20,7 @@ public class Constants {
     public static final String NOT_EXISTENT_CATEGORY_LIST_PATH = "x.json";
     public static final boolean DO_REINITIALIZATION = true;
     public static final String CATEGORY_TEST_NAME = "test";
+    public static final Integer FIRST_CATEGORY_INDEX = 0;
+    public static final String FIRST_TEST_CATEGORY_NAME = "TestCategory";
+    public static final Integer NUMBER_OF_ROUNDS = 2;
 }

@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
 
+import java.util.stream.IntStream;
+
 import static com.github.haseoo.simplequizjava.testutils.Constants.*;
 import static com.github.haseoo.simplequizjava.testutils.QuestionRepositoryTestDataGenerator.generateCategory;
 import static com.github.haseoo.simplequizjava.testutils.QuestionRepositoryTestDataGenerator.generateFirstQuestion;
@@ -68,9 +70,7 @@ class QuestionServiceTest {
     @Test
     void should_throw_exception_when_drawing_fourth_question() {
         //give
-        for(int i = 0; i < 3; i++) {
-            sut.getRandomQuestion();
-        }
+        IntStream.range(0, 3).forEach((i) -> sut.getRandomQuestion());
         //when
         Assertions.assertThatThrownBy(() -> sut.getRandomQuestion()).isInstanceOf(UnableToDrawQuestionException.class);
         Assertions.assertThatThrownBy(() -> sut.getRandomQuestion(TEST_CATEGORY_INDEX)).isInstanceOf(UnableToDrawQuestionException.class);
