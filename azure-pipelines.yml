@@ -31,7 +31,6 @@ steps:
     sonarQubeRunAnalysis: true
     sqGradlePluginVersionChoice: 'specify'
     sonarQubeGradlePluginVersion: '2.6.1'
-    checkStyleRunAnalysis: true
     findBugsRunAnalysis: true
     pmdRunAnalysis: true
 - task: SonarQubePublish@4
