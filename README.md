@@ -1,4 +1,4 @@
-# SimpleQuiz Java
+# SimpleQuiz Javah
 ![Project logo](https://raw.githubusercontent.com/Haseoo/SimpleQuizJava/master/src/main/resources/windows/logo.png "Project logo")
 
 SimpleQuizJava is a game project based on my [first-year-study project](https://github.com/Haseoo/SimpleQuizC  "first-year-study project") written in C. I was making this project to learn Java in practice. I believed this would be a good idea to make a project with the concept I already know.  I finished the game during the semester but I didn't push the code to GitHub. I didn't like the spaghetti code I had written. During the summer internship, I learned some good coding practices and I decided to rewrite entire code. I'm not sure that my name convention is good or not but I haven't came up with a better one.
